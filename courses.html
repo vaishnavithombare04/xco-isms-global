@@ -1,0 +1,1063 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Explore Courses | ISMS Global - Undergraduate, Postgraduate & Diploma Courses</title>
+  <meta name="description" content="Discover 1000+ undergraduate, postgraduate and diploma courses from top universities across the world. Filter by country, subject, degree level and study mode with ISMS Global.">
+  
+  <!-- Google Fonts -->
+  
+  
+  
+  
+  <!-- FontAwesome 6 CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+  <!-- Site Styles & Custom Courses Page Styles -->
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="courses.css">
+  <!-- ===== NAVBAR OVERRIDE: Exact match with index.html ===== -->
+  <style>
+  /* Navigation Bar Theme Overrides - EXACT MATCH WITH INDEX.HTML */
+  :root {
+    --header-bg: #F4F8FF;
+    --header-border: #DCE5F3;
+    --nav-text: #11172A;
+    --nav-hover-bg: #E5EDFF;
+    --nav-accent: #0D47D8;
+    --dropdown-bg: #FFFFFF;
+    --gold-btn: #C79A3C;
+    --gold-btn-hover: #B5872E;
+  }
+
+  .site-header {
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+    width: 100% !important;
+    z-index: 9999 !important;
+    background: var(--header-bg) !important;
+    border-bottom: 1px solid var(--header-border) !important;
+    box-shadow: 0 4px 20px rgba(17,23,42,0.08) !important;
+    backdrop-filter: none !important;
+  }
+
+  body {
+    padding-top: 96px !important;
+  }
+
+  .header-inner {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    height: 72px !important;
+    gap: 12px !important;
+    max-width: 1720px !important;
+    width: 95% !important;
+    margin: 0 auto !important;
+    padding: 0 2.5rem !important;
+  }
+
+  .brand-logo-img {
+    height: 48px !important;
+    width: auto !important;
+    max-width: 200px !important;
+    object-fit: contain !important;
+    display: block !important;
+  }
+
+  .main-nav {
+    display: flex !important;
+    align-items: center !important;
+    gap: 0 !important;
+    flex: 1 !important;
+    justify-content: center !important;
+    font-family: 'Inter', Arial, sans-serif !important;
+  }
+
+  .main-nav a {
+    color: var(--nav-text) !important;
+    font-size: 14.5px !important;
+    font-weight: 600 !important;
+    padding: 20px 16px !important;
+    border-bottom: 3px solid transparent !important;
+    transition: background .15s ease, border-color .15s ease !important;
+    opacity: 1 !important;
+    text-decoration: none !important;
+    white-space: nowrap !important;
+    display: flex !important;
+    align-items: center !important;
+  }
+  .main-nav a:hover, .main-nav a.active {
+    background: var(--nav-hover-bg) !important;
+    color: var(--nav-accent) !important;
+    border-bottom: 3px solid var(--nav-accent) !important;
+  }
+  .main-nav a.active::after {
+    display: none !important;
+  }
+
+  .nav-dropdown {
+    position: relative !important;
+  }
+  .nav-dropdown-toggle {
+    color: var(--nav-text) !important;
+    font-size: 14.5px !important;
+    font-weight: 600 !important;
+    padding: 20px 16px !important;
+    border-bottom: 3px solid transparent !important;
+    transition: background .15s ease, border-color .15s ease !important;
+    opacity: 1 !important;
+    background: transparent !important;
+    border-top: none !important;
+    border-left: none !important;
+    border-right: none !important;
+    cursor: pointer !important;
+    display: flex !important;
+    align-items: center !important;
+    gap: 5px !important;
+    white-space: nowrap !important;
+    font-family: 'Inter', Arial, sans-serif !important;
+  }
+  .nav-dropdown-toggle i {
+    color: var(--nav-accent) !important;
+    font-size: 10px !important;
+  }
+  .nav-dropdown:hover .nav-dropdown-toggle {
+    background: var(--nav-hover-bg) !important;
+    border-bottom: 3px solid var(--nav-accent) !important;
+    color: var(--nav-accent) !important;
+  }
+
+  .nav-dropdown-menu {
+    position: absolute !important;
+    top: 100% !important;
+    left: 0 !important;
+    background: var(--dropdown-bg) !important;
+    border: 1px solid var(--header-border) !important;
+    border-top: 3px solid var(--nav-accent) !important;
+    box-shadow: 0 14px 30px rgba(13, 71, 216, 0.08) !important;
+    border-radius: 14px !important;
+    padding: 8px !important;
+    opacity: 0 !important;
+    visibility: hidden !important;
+    transform: translateY(6px) !important;
+    transition: all 0.2s ease !important;
+    min-width: 160px !important;
+  }
+  .nav-dropdown:hover .nav-dropdown-menu {
+    opacity: 1 !important;
+    visibility: visible !important;
+    transform: translateY(4px) !important;
+  }
+  .nav-dropdown-menu a {
+    color: var(--nav-text) !important;
+    border-left: 3px solid transparent !important;
+    border-bottom: none !important;
+    border-top: none !important;
+    padding: 10px 22px !important;
+    font-size: 13.5px !important;
+    font-weight: 500 !important;
+    background: transparent !important;
+  }
+  .nav-dropdown-menu a:hover {
+    background: var(--header-bg) !important;
+    border-left: 3px solid var(--nav-accent) !important;
+    color: var(--nav-accent) !important;
+  }
+
+  .dest-mega-menu {
+    min-width: 680px !important;
+    padding: 16px 20px !important;
+    display: grid !important;
+    grid-template-columns: repeat(3, 1fr) !important;
+    gap: 8px 12px !important;
+    left: 50% !important;
+    transform: translateX(-50%) translateY(8px) !important;
+    border-radius: 18px !important;
+    background: var(--dropdown-bg) !important;
+    border-top: 3px solid var(--nav-accent) !important;
+  }
+  .nav-dropdown:hover .dest-mega-menu {
+    transform: translateX(-50%) translateY(4px) !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+  }
+
+  .dest-drop-item {
+    display: flex !important;
+    align-items: center !important;
+    gap: 12px !important;
+    padding: 10px 12px !important;
+    border-radius: 12px !important;
+    border-bottom: none !important;
+    border-top: none !important;
+    transition: background 0.15s ease !important;
+    text-decoration: none !important;
+    color: inherit !important;
+  }
+  .dest-drop-item:hover {
+    background: var(--header-bg) !important;
+    border-left: 3px solid var(--nav-accent) !important;
+  }
+  .dest-drop-flag {
+    width: 26px !important;
+    height: 18px !important;
+    object-fit: cover !important;
+    border-radius: 3px !important;
+    flex-shrink: 0 !important;
+  }
+  .dest-drop-text {
+    display: flex !important;
+    flex-direction: column !important;
+    line-height: 1.25 !important;
+  }
+  .dest-drop-text strong {
+    font-size: 13.5px !important;
+    font-weight: 700 !important;
+    color: var(--nav-text) !important;
+  }
+  .dest-drop-text span {
+    font-size: 11px !important;
+    color: #64748B !important;
+    margin-top: 2px !important;
+  }
+
+  .header-actions {
+    display: flex !important;
+    align-items: center !important;
+    gap: 8px !important;
+    flex-shrink: 0 !important;
+  }
+  .header-phone {
+    display: flex !important;
+    align-items: center !important;
+    gap: 10px !important;
+    color: var(--nav-text) !important;
+    text-decoration: none !important;
+    font-size: 12.5px !important;
+  }
+  .header-phone i {
+    width: 36px !important;
+    height: 36px !important;
+    border-radius: 50% !important;
+    background: var(--nav-hover-bg) !important;
+    color: var(--nav-accent) !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+  }
+  .header-phone small {
+    color: #667085 !important;
+  }
+  .header-phone strong {
+    color: var(--nav-text) !important;
+    font-weight: 700 !important;
+    font-size: 13.5px !important;
+  }
+
+  .site-header .btn-primary {
+    background: var(--gold-btn) !important;
+    color: #FFFFFF !important;
+    border: none !important;
+    font-weight: 700 !important;
+    box-shadow: none !important;
+    border-radius: 8px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+  }
+  .site-header .btn-primary:hover {
+    background: var(--gold-btn-hover) !important;
+    color: #FFFFFF !important;
+    transform: none !important;
+  }
+
+  .nav-toggle {
+    display: none !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    gap: 5px !important;
+    background: none !important;
+    border: none !important;
+    padding: 8px !important;
+    cursor: pointer !important;
+  }
+  .nav-toggle span {
+    width: 24px !important;
+    height: 2px !important;
+    background: var(--nav-text) !important;
+    border-radius: 2px !important;
+    transition: 0.3s ease !important;
+    display: block !important;
+  }
+
+  @media (max-width: 1160px) {
+    .nav-toggle { display: flex !important; }
+    .main-nav {
+      position: fixed !important;
+      inset: 72px 0 0 0 !important;
+      background: #fff !important;
+      flex-direction: column !important;
+      align-items: stretch !important;
+      padding: 24px !important;
+      gap: 4px !important;
+      overflow-y: auto !important;
+      transform: translateX(100%) !important;
+      transition: transform 0.3s ease !important;
+      box-shadow: 0 20px 40px rgba(0,0,0,0.1) !important;
+      z-index: 9998 !important;
+    }
+    .main-nav.open { transform: translateX(0) !important; }
+    .main-nav a, .nav-dropdown-toggle {
+      padding: 14px 8px !important;
+      border-bottom: 1px solid #E2E8F0 !important;
+      width: 100% !important;
+      font-size: 15px !important;
+      border-top: none !important;
+      border-left: none !important;
+      border-right: none !important;
+    }
+    .dest-mega-menu {
+      min-width: unset !important;
+      grid-template-columns: 1fr !important;
+      transform: none !important;
+      left: 0 !important;
+      position: static !important;
+      box-shadow: none !important;
+      border: none !important;
+    }
+    .nav-dropdown-menu {
+      position: static !important;
+      opacity: 1 !important;
+      visibility: visible !important;
+      transform: none !important;
+      display: none !important;
+    }
+    .nav-dropdown.open .nav-dropdown-menu { display: block !important; }
+  }
+  </style>
+</head>
+<body>
+
+  <!-- ==================== 1. HEADER (SITE NAVBAR) ==================== -->
+  <!-- ============ HEADER ============ -->
+<header class="site-header" id="siteHeader">
+  <div class="container header-inner">
+    <a href="index.html" class="logo">
+      <img src="assets/logo.png" alt="ISMS Global Education Logo" class="brand-logo-img">
+    </a>
+
+    <nav class="main-nav" id="mainNav">
+      <a href="index.html">Home</a>
+      <a href="about.html">About Us</a>
+      <div class="nav-dropdown">
+        <button class="nav-dropdown-toggle">Study Destinations <i class="fa-solid fa-chevron-down"></i></button>
+        <div class="nav-dropdown-menu dest-mega-menu">
+          <a href="uk-destination.html" class="dest-drop-item">
+            <img src="assets/flag_w40_gb.png" alt="UK Flag" class="dest-drop-flag">
+            <div class="dest-drop-text">
+              <strong>United Kingdom</strong>
+              <span>Top-ranked universities</span>
+            </div>
+          </a>
+          <a href="index.html#destinations" class="dest-drop-item">
+            <img src="assets/flag_w40_ie.png" alt="Ireland Flag" class="dest-drop-flag">
+            <div class="dest-drop-text">
+              <strong>Ireland</strong>
+              <span>EU residency gateway</span>
+            </div>
+          </a>
+          <a href="index.html#destinations" class="dest-drop-item">
+            <img src="assets/flag_w40_au.png" alt="Australia Flag" class="dest-drop-flag">
+            <div class="dest-drop-text">
+              <strong>Australia</strong>
+              <span>World-class education</span>
+            </div>
+          </a>
+          <a href="index.html#destinations" class="dest-drop-item">
+            <img src="assets/flag_w40_us.png" alt="USA Flag" class="dest-drop-flag">
+            <div class="dest-drop-text">
+              <strong>USA</strong>
+              <span>Leading research institutions</span>
+            </div>
+          </a>
+          <a href="index.html#destinations" class="dest-drop-item">
+            <img src="assets/flag_w40_nz.png" alt="New Zealand Flag" class="dest-drop-flag">
+            <div class="dest-drop-text">
+              <strong>New Zealand</strong>
+              <span>Safe, scenic, welcoming</span>
+            </div>
+          </a>
+          <a href="dubai-destination.html" class="dest-drop-item">
+            <img src="assets/flag_w40_ae.png" alt="Dubai Flag" class="dest-drop-flag">
+            <div class="dest-drop-text">
+              <strong>Dubai</strong>
+              <span>Global business hub</span>
+            </div>
+          </a>
+          <a href="index.html#destinations" class="dest-drop-item">
+            <img src="assets/flag_w40_fr.png" alt="France Flag" class="dest-drop-flag">
+            <div class="dest-drop-text">
+              <strong>France</strong>
+              <span>Art, culture &amp; innovation</span>
+            </div>
+          </a>
+          <a href="index.html#destinations" class="dest-drop-item">
+            <img src="assets/flag_w40_de.png" alt="Germany Flag" class="dest-drop-flag">
+            <div class="dest-drop-text">
+              <strong>Germany</strong>
+              <span>Engineering excellence</span>
+            </div>
+          </a>
+          <a href="index.html#destinations" class="dest-drop-item">
+            <img src="assets/flag_w40_nl.png" alt="Netherlands Flag" class="dest-drop-flag">
+            <div class="dest-drop-text">
+              <strong>Netherlands</strong>
+              <span>English-taught programmes</span>
+            </div>
+          </a>
+          <a href="index.html#destinations" class="dest-drop-item">
+            <img src="assets/flag_w40_es.png" alt="Spain Flag" class="dest-drop-flag">
+            <div class="dest-drop-text">
+              <strong>Spain</strong>
+              <span>Vibrant student culture</span>
+            </div>
+          </a>
+        </div>
+      </div>
+      <a href="universities.html">Universities</a>
+      <a href="courses.html">Courses</a>
+      <a href="services.html">Services</a>
+      <a href="Scholarship.html">Scholarships</a>
+      <a href="Blog.html">Blog</a>
+      <a href="contact.html">Contact Us</a>
+    </nav>
+
+    <div class="header-actions">
+      <a href="tel:+919561776600" class="header-phone">
+        <i class="fa-solid fa-phone"></i>
+        <span><strong>Call Now</strong></span>
+      </a>
+      <a href="index.html#contact" class="btn btn-primary btn-sm" style="font-size:12px; padding: 0 14px; height: 36px;">Get FREE Counselling</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+  <!-- MAIN CONTENT WRAPPER -->
+  <main>
+
+    <!-- ==================== 2. HERO SECTION ==================== -->
+    <section class="courses-hero-section">
+      <div class="hero-bg-landmarks">
+        <img src="assets/Scene_Sketch.png" alt="World Landmarks Scene Sketch Background" class="hero-scene-sketch-img">
+      </div>
+      
+      <!-- Airplane Vector -->
+      <img src="assets/plane.png" class="hero-vector-plane" alt="Airplane Vector">
+
+      <div class="container">
+        <div class="courses-hero-inner">
+          <div class="courses-hero-content">
+            <nav class="courses-breadcrumb">
+              <a href="index.html">Home</a>
+              <span class="sep">&gt;</span>
+              <span class="current">Courses</span>
+            </nav>
+            <h1 class="courses-hero-title">
+              Trending UG &amp; PG Courses<br>
+              <span class="blue-text">Across the Globe</span>
+            </h1>
+            <p class="courses-hero-sub">
+              Explore top courses offered by leading universities worldwide. Use the filters to find the right program based on your preferred course, study level, destination, and more.
+            </p>
+          </div>
+
+          <div class="courses-hero-image-wrapper">
+            <img src="assets/Girl.png" alt="Smiling Student Girl with Notebooks" class="hero-student-img">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== 3. FLOATING SEARCH & FILTER CARD ==================== -->
+    <div class="container">
+      <div class="courses-search-wrapper">
+        <div class="search-filter-card">
+          <!-- Tab Switcher -->
+          <div class="search-tabs-row">
+            <button type="button" class="tab-pill active">Find Courses</button>
+            <button type="button" class="tab-pill outline">Browse by Stream</button>
+          </div>
+
+          <!-- Form Fields Grid -->
+          <div class="search-form-grid">
+            <!-- Course Search Input -->
+            <div class="form-group">
+              <label for="heroSearchInput">Search Courses</label>
+              <div class="search-input-box">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="text" id="heroSearchInput" placeholder="Search for courses, e.g., MBA, Engineering...">
+              </div>
+            </div>
+
+            <!-- Study Destination Dropdown -->
+            <div class="form-group">
+              <label for="heroDestSelect">Study Destination</label>
+              <div class="select-box-wrapper">
+                <select id="heroDestSelect">
+                  <option value="all">All Countries</option>
+                  <option value="United Kingdom">United Kingdom</option>
+                  <option value="Australia">Australia</option>
+                  <option value="Canada">Canada</option>
+                  <option value="United States">United States</option>
+                  <option value="Germany">Germany</option>
+                </select>
+                <i class="fa-solid fa-chevron-down"></i>
+              </div>
+            </div>
+
+            <!-- Course Level Dropdown -->
+            <div class="form-group">
+              <label for="heroLevelSelect">Course Level</label>
+              <div class="select-box-wrapper">
+                <select id="heroLevelSelect">
+                  <option value="all">All Levels</option>
+                  <option value="Undergraduate">Undergraduate</option>
+                  <option value="Postgraduate">Postgraduate</option>
+                  <option value="Diploma">Diploma</option>
+                  <option value="Doctorate">Doctorate</option>
+                </select>
+                <i class="fa-solid fa-chevron-down"></i>
+              </div>
+            </div>
+
+            <!-- Course Type Dropdown -->
+            <div class="form-group">
+              <label for="heroTypeSelect">Course Type</label>
+              <div class="select-box-wrapper">
+                <select id="heroTypeSelect">
+                  <option value="all">All Types</option>
+                  <option value="Full-time">Full-time</option>
+                  <option value="Part-time">Part-time</option>
+                  <option value="Online">Online</option>
+                  <option value="Distance Learning">Distance Learning</option>
+                </select>
+                <i class="fa-solid fa-chevron-down"></i>
+              </div>
+            </div>
+
+            <!-- Submit Button -->
+            <button type="button" class="btn-search-submit" id="btnSearchSubmit">
+              <i class="fa-solid fa-magnifying-glass"></i> Search Courses
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- ==================== 4. STATS HIGHLIGHTS ROW ==================== -->
+      <div class="stats-highlights-row">
+        <div class="stat-item-card">
+          <div class="stat-icon-circle"><i class="fa-solid fa-graduation-cap"></i></div>
+          <div class="stat-info">
+            <strong>1000+ Courses</strong>
+            <span>Wide Range of Options</span>
+          </div>
+        </div>
+
+        <div class="stat-item-card">
+          <div class="stat-icon-circle"><i class="fa-solid fa-globe"></i></div>
+          <div class="stat-info">
+            <strong>20+ Countries</strong>
+            <span>Top Study Destinations</span>
+          </div>
+        </div>
+
+        <div class="stat-item-card">
+          <div class="stat-icon-circle"><i class="fa-solid fa-building-columns"></i></div>
+          <div class="stat-info">
+            <strong>500+ Universities</strong>
+            <span>World-Class Institutions</span>
+          </div>
+        </div>
+
+        <div class="stat-item-card">
+          <div class="stat-icon-circle"><i class="fa-solid fa-user-tie"></i></div>
+          <div class="stat-info">
+            <strong>Expert Guidance</strong>
+            <span>At Every Step</span>
+          </div>
+        </div>
+
+        <div class="stat-item-card">
+          <div class="stat-icon-circle"><i class="fa-solid fa-shield-halved"></i></div>
+          <div class="stat-info">
+            <strong>100% Free</strong>
+            <span>Counselling Support</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- ==================== 5. MAIN CONTENT LAYOUT (SIDEBAR + GRID) ==================== -->
+      <div class="courses-main-layout">
+
+        <!-- LEFT SIDEBAR FILTER PANEL -->
+        <aside class="filter-sidebar-card">
+          <div class="filter-sidebar-header">
+            <h3>Filter Courses</h3>
+            <button type="button" class="btn-clear-all" id="btnClearAll">Clear All</button>
+          </div>
+
+          <!-- Filter Group 1: Study Destination -->
+          <div class="filter-group-section">
+            <div class="filter-title-toggle">
+              <span>Study Destination</span>
+              <i class="fa-solid fa-chevron-up"></i>
+            </div>
+            <div class="filter-options-list">
+              <label class="custom-checkbox-row">
+                <input type="checkbox" name="dest_filter" value="all" checked>
+                <span>All Countries</span>
+              </label>
+              <label class="custom-checkbox-row">
+                <input type="checkbox" name="dest_filter" value="United Kingdom">
+                <span>United Kingdom</span>
+              </label>
+              <label class="custom-checkbox-row">
+                <input type="checkbox" name="dest_filter" value="Australia">
+                <span>Australia</span>
+              </label>
+              <label class="custom-checkbox-row">
+                <input type="checkbox" name="dest_filter" value="Canada">
+                <span>Canada</span>
+              </label>
+              <label class="custom-checkbox-row">
+                <input type="checkbox" name="dest_filter" value="United States">
+                <span>United States</span>
+              </label>
+              <label class="custom-checkbox-row">
+                <input type="checkbox" name="dest_filter" value="Germany">
+                <span>Germany</span>
+              </label>
+              <div class="extra-options" style="display: none; flex-direction: column; gap: 10px;">
+                <label class="custom-checkbox-row">
+                  <input type="checkbox" name="dest_filter" value="Ireland">
+                  <span>Ireland</span>
+                </label>
+                <label class="custom-checkbox-row">
+                  <input type="checkbox" name="dest_filter" value="Dubai">
+                  <span>Dubai / UAE</span>
+                </label>
+                <label class="custom-checkbox-row">
+                  <input type="checkbox" name="dest_filter" value="France">
+                  <span>France</span>
+                </label>
+                <label class="custom-checkbox-row">
+                  <input type="checkbox" name="dest_filter" value="Spain">
+                  <span>Spain</span>
+                </label>
+                <label class="custom-checkbox-row">
+                  <input type="checkbox" name="dest_filter" value="Netherlands">
+                  <span>Netherlands</span>
+                </label>
+                <label class="custom-checkbox-row">
+                  <input type="checkbox" name="dest_filter" value="New Zealand">
+                  <span>New Zealand</span>
+                </label>
+              </div>
+              <button type="button" class="btn-show-more">+ Show More</button>
+            </div>
+          </div>
+
+          <!-- Filter Group 2: Course Level -->
+          <div class="filter-group-section">
+            <div class="filter-title-toggle">
+              <span>Course Level</span>
+              <i class="fa-solid fa-chevron-up"></i>
+            </div>
+            <div class="filter-options-list">
+              <label class="custom-checkbox-row">
+                <input type="checkbox" name="level_filter" value="all" checked>
+                <span>All Levels</span>
+              </label>
+              <label class="custom-checkbox-row">
+                <input type="checkbox" name="level_filter" value="Undergraduate">
+                <span>Undergraduate</span>
+              </label>
+              <label class="custom-checkbox-row">
+                <input type="checkbox" name="level_filter" value="Postgraduate">
+                <span>Postgraduate</span>
+              </label>
+              <label class="custom-checkbox-row">
+                <input type="checkbox" name="level_filter" value="Diploma">
+                <span>Diploma</span>
+              </label>
+              <label class="custom-checkbox-row">
+                <input type="checkbox" name="level_filter" value="Doctorate">
+                <span>Doctorate</span>
+              </label>
+            </div>
+          </div>
+
+          <!-- Filter Group 3: Course Type -->
+          <div class="filter-group-section">
+            <div class="filter-title-toggle">
+              <span>Course Type</span>
+              <i class="fa-solid fa-chevron-up"></i>
+            </div>
+            <div class="filter-options-list">
+              <label class="custom-checkbox-row">
+                <input type="checkbox" name="type_filter" value="all" checked>
+                <span>All Types</span>
+              </label>
+              <label class="custom-checkbox-row">
+                <input type="checkbox" name="type_filter" value="Full-time">
+                <span>Full-time</span>
+              </label>
+              <label class="custom-checkbox-row">
+                <input type="checkbox" name="type_filter" value="Part-time">
+                <span>Part-time</span>
+              </label>
+              <label class="custom-checkbox-row">
+                <input type="checkbox" name="type_filter" value="Online">
+                <span>Online</span>
+              </label>
+              <label class="custom-checkbox-row">
+                <input type="checkbox" name="type_filter" value="Distance Learning">
+                <span>Distance Learning</span>
+              </label>
+            </div>
+          </div>
+
+          <!-- Filter Group 4: Study Area -->
+          <div class="filter-group-section">
+            <div class="filter-title-toggle">
+              <span>Study Area</span>
+              <i class="fa-solid fa-chevron-up"></i>
+            </div>
+            <div class="filter-options-list">
+              <label class="custom-checkbox-row">
+                <input type="checkbox" name="subject_filter" value="all" checked>
+                <span>All Subjects</span>
+              </label>
+              <label class="custom-checkbox-row">
+                <input type="checkbox" name="subject_filter" value="Business & Management">
+                <span>Business &amp; Management</span>
+              </label>
+              <label class="custom-checkbox-row">
+                <input type="checkbox" name="subject_filter" value="Engineering">
+                <span>Engineering</span>
+              </label>
+              <label class="custom-checkbox-row">
+                <input type="checkbox" name="subject_filter" value="Computer Science">
+                <span>Computer Science</span>
+              </label>
+              <label class="custom-checkbox-row">
+                <input type="checkbox" name="subject_filter" value="Medicine & Health">
+                <span>Medicine &amp; Health</span>
+              </label>
+              <label class="custom-checkbox-row">
+                <input type="checkbox" name="subject_filter" value="Law">
+                <span>Law</span>
+              </label>
+              <div class="extra-options" style="display: none; flex-direction: column; gap: 10px;">
+                <label class="custom-checkbox-row">
+                  <input type="checkbox" name="subject_filter" value="Design & Media">
+                  <span>Design &amp; Media</span>
+                </label>
+                <label class="custom-checkbox-row">
+                  <input type="checkbox" name="subject_filter" value="Law & Governance">
+                  <span>Law &amp; Governance</span>
+                </label>
+              </div>
+              <button type="button" class="btn-show-more">+ Show More</button>
+            </div>
+          </div>
+
+          <!-- Apply Filters Button -->
+          <button type="button" class="btn-apply-filters" id="btnApplyFilters">
+            <i class="fa-solid fa-filter"></i> Apply Filters
+          </button>
+        </aside>
+
+        <!-- RIGHT COURSE LISTING COLUMN -->
+        <div class="courses-listing-content">
+          <!-- Top Results Bar -->
+          <div class="courses-top-bar">
+            <div class="results-count-text" id="resultsCountText">
+              Showing 1-12 of 1,248 Courses
+            </div>
+
+            <div class="results-controls-right">
+              <div class="sort-wrapper">
+                <label for="sortSelect">Sort by:</label>
+                <select id="sortSelect" class="sort-select">
+                  <option value="popularity">Popularity</option>
+                  <option value="name">Course Name</option>
+                  <option value="duration">Duration</option>
+                </select>
+              </div>
+
+              <div class="view-toggle-btns">
+                <button type="button" class="btn-view-toggle active" id="btnGridView" aria-label="Grid View">
+                  <i class="fa-solid fa-table-cells-large"></i>
+                </button>
+                <button type="button" class="btn-view-toggle" id="btnListView" aria-label="List View">
+                  <i class="fa-solid fa-list"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- COURSE CARDS GRID (Populated Dynamically via courses.js) -->
+          <div class="course-cards-grid" id="courseCardsContainer"></div>
+
+          <!-- PAGINATION -->
+          <div class="pagination-container">
+            <button type="button" class="page-nav-btn" aria-label="Previous Page"><i class="fa-solid fa-chevron-left"></i></button>
+            <button type="button" class="page-nav-btn active">1</button>
+            <button type="button" class="page-nav-btn">2</button>
+            <button type="button" class="page-nav-btn">3</button>
+            <button type="button" class="page-nav-btn">4</button>
+            <span class="page-dots">...</span>
+            <button type="button" class="page-nav-btn">104</button>
+            <button type="button" class="page-nav-btn" aria-label="Next Page"><i class="fa-solid fa-chevron-right"></i></button>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- FULL-WIDTH SCREEN EDGE-TO-EDGE SKYLINE BANNER -->
+      <div class="fullwidth-skyline-section">
+        <img src="assets/dest-globe.png" alt="Destination Globe Graphic" class="skyline-dest-globe-img">
+        <img src="assets/dubai-panoramic-skyline.png" alt="Dubai Panoramic Skyline Graphic" class="skyline-bg-img">
+      </div>
+
+      <!-- ==================== 5. VALUE PROPOSITION & HELP BANNER ==================== -->
+      <section class="value-prop-section">
+        <div class="value-prop-grid">
+          <div class="value-pillars-list">
+            <div class="pillar-item">
+              <div class="pillar-icon-box"><i class="fa-solid fa-building-columns"></i></div>
+              <strong>Career Focused Courses</strong>
+              <span>Industry relevant curriculum</span>
+            </div>
+
+            <div class="pillar-item">
+              <div class="pillar-icon-box"><i class="fa-solid fa-award"></i></div>
+              <strong>Global Recognition</strong>
+              <span>World class degree &amp; recognition</span>
+            </div>
+
+            <div class="pillar-item">
+              <div class="pillar-icon-box"><i class="fa-solid fa-graduation-cap"></i></div>
+              <strong>Scholarship Opportunities</strong>
+              <span>Merit based &amp; need based scholarships</span>
+            </div>
+
+            <div class="pillar-item">
+              <div class="pillar-icon-box"><i class="fa-solid fa-hand-holding-dollar"></i></div>
+              <strong>Education Loan Assistance</strong>
+              <span>Low interest &amp; easy EMI options</span>
+            </div>
+
+            <div class="pillar-item">
+              <div class="pillar-icon-box"><i class="fa-solid fa-headset"></i></div>
+              <strong>Dedicated Support</strong>
+              <span>From shortlisting to visa &amp; beyond.</span>
+            </div>
+          </div>
+
+          <!-- Expert Help Blue Card -->
+          <div class="expert-help-card">
+            <div class="expert-help-text">
+              <h4>Not Sure Which Course is Right for You?</h4>
+              <p>Our experts will help you choose the perfect course based on your profile and goals.</p>
+              <button type="button" class="btn-talk-expert">
+                Talk to an Expert <i class="fa-solid fa-arrow-right"></i>
+              </button>
+            </div>
+            <img src="assets/Books.png" alt="Graduation Cap and Books" class="expert-help-img">
+          </div>
+        </div>
+      </section>
+
+      <!-- ==================== 6. BLUE CONSULTATION BANNER ==================== -->
+      <section class="consultation-cta-banner">
+        <div class="consultation-banner-inner">
+          <img src="assets/Boy.png" alt="Smiling Student Counsellor" class="cta-left-student">
+          
+          <div class="cta-center-content">
+            <h2>Let Our Experts Help You Find the Right Course</h2>
+            <p>Book a free one-to-one counseling session and get personalized advice from our experienced counsellors.</p>
+          </div>
+
+          <div class="cta-right-actions">
+            <button type="button" class="btn-cta-gold">Book Free Counselling</button>
+            <button type="button" class="btn-cta-outline-white">
+              <i class="fa-solid fa-headset"></i> Talk to an Expert
+            </button>
+          </div>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <!-- ==================== 7. FOOTER ==================== -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="logo logo-footer"><img src="assets/logo.png" alt="ISMS Global Education Logo" class="brand-logo-img footer-logo-img"></a>
+        <p>ISMS Global is your trusted partner for studying abroad. We provide end-to-end support for admissions, visas, scholarships and a successful international education journey.</p>
+        <ul class="footer-highlights">
+          <li><i class="fa-solid fa-earth-americas"></i><div><strong>Global Expertise</strong><span>Years of experience in international education and student success.</span></div></li>
+          <li><i class="fa-solid fa-user-group"></i><div><strong>Student First</strong><span>Personalized guidance and support at every step of your journey.</span></div></li>
+          <li><i class="fa-solid fa-shield-halved"></i><div><strong>Integrity &amp; Trust</strong><span>Transparent processes and honest advice you can rely on.</span></div></li>
+        </ul>
+      </div>
+
+      <div class="footer-col"><h5>Quick Links</h5>
+        <ul><li><a href="index.html">Home</a></li><li><a href="about.html">About Us</a></li><li><a href="services.html">Our Services</a></li><li><a href="study-abroad-counselling.html">Study Abroad Counselling</a></li><li><a href="index.html#destinations">Study Destinations</a></li><li><a href="universities.html">Universities</a></li><li><a href="courses.html">Courses</a></li><li><a href="Scholarship.html">Scholarships</a></li><li><a href="index.html#blog">Blogs &amp; Resources</a></li><li><a href="contact.html">Contact Us</a></li><li><a href="sitemap.html">Sitemap</a></li></ul>
+      </div>
+
+      <div class="footer-col"><h5>Study Destinations</h5>
+        <ul>
+          <li><a href="index.html#destinations"><img src="assets/flag_w40_ca.png" class="flag-icon" alt="Canada Flag"> Canada</a></li>
+          <li><a href="index.html#destinations"><img src="assets/flag_w40_us.png" class="flag-icon" alt="USA Flag"> USA</a></li>
+          <li><a href="index.html#destinations"><img src="assets/flag_w40_gb.png" class="flag-icon" alt="UK Flag"> UK</a></li>
+          <li><a href="index.html#destinations"><img src="assets/flag_w40_au.png" class="flag-icon" alt="Australia Flag"> Australia</a></li>
+          <li><a href="index.html#destinations"><img src="assets/flag_w40_de.png" class="flag-icon" alt="Germany Flag"> Germany</a></li>
+          <li><a href="index.html#destinations"><img src="assets/flag_w40_ie.png" class="flag-icon" alt="Ireland Flag"> Ireland</a></li>
+          <li><a href="dubai-destination.html"><img src="assets/flag_w40_ae.png" class="flag-icon" alt="Dubai Flag"> Dubai</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col"><h5>Popular Courses</h5>
+        <ul><li><a href="courses.html">Business &amp; Management</a></li><li><a href="courses.html">Engineering</a></li><li><a href="courses.html">Information Technology</a></li><li><a href="courses.html">Health &amp; Medicine</a></li><li><a href="courses.html">Data Science &amp; AI</a></li><li><a href="courses.html">Law</a></li></ul>
+      </div>
+
+      <div class="footer-col"><h5>Our Services</h5>
+        <ul><li><a href="services.html#step-01">University Selection</a></li><li><a href="services.html#step-02">Admission Guidance</a></li><li><a href="services.html#step-05">Visa Assistance</a></li><li><a href="services.html#step-04">Scholarships &amp; Loans</a></li><li><a href="services.html#step-03">Pre-Departure Support</a></li><li><a href="study-abroad-counselling.html">Study Abroad Counselling</a></li></ul>
+      </div>
+
+      <div class="footer-col footer-newsletter"><h5>Newsletter</h5>
+        <p>Stay updated with the latest study abroad news, scholarships, events and useful resources.</p>
+        <form class="newsletter-form" onsubmit="return false;">
+          <input type="email" placeholder="Enter your email address" required>
+          <button type="submit" aria-label="Subscribe"><i class="fa-solid fa-paper-plane"></i></button>
+        </form>
+        <h6>Follow Us</h6>
+        <div class="social-row">
+          <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+          <a href="#" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="container footer-offices">
+      <div class="offices-col"><h5>Our Offices</h5>
+        <div class="office"><i class="fa-solid fa-location-dot"></i><div><strong>India &ndash; Head Office</strong><span>ISMS Global Education Pvt. Ltd. Baner, Pune, Maharashtra 411045, India</span><small>info@ismsglobal.com | +91 95 61 77 66 00</small></div></div>
+        <div class="office"><i class="fa-solid fa-location-dot"></i><div><strong>Canada Office</strong><span>100 Consilium Place, Suite 200, Scarborough, ON M1H 3E3, Canada</span><small>canada@ismsglobal.com | +1 437 774 5006</small></div></div>
+        <div class="office"><i class="fa-solid fa-location-dot"></i><div><strong>UK Office</strong><span>85 Great Portland Street, London, W1W 7LT, United Kingdom</span><small>uk@ismsglobal.com | +44 20 3868 0743</small></div></div>
+      </div>
+      <div class="offices-col"><h5>Accreditations &amp; Partnerships</h5>
+        <div class="accred-grid">
+          <div class="accred-badge"><i class="fa-solid fa-circle-nodes"></i>ICEF<small>Connect. Recruit. Grow.</small></div>
+          <div class="accred-badge"><i class="fa-regular fa-circle"></i>British Council<small>Certified Agent</small></div>
+          <div class="accred-badge"><i class="fa-solid fa-award"></i>QEAC Australia<small>Qualified Education Agent Counsellor</small></div>
+          <div class="accred-badge"><i class="fa-solid fa-a"></i>AAERI<small>Member</small></div>
+        </div>
+      </div>
+      <div class="offices-col"><h5>Why Choose ISMS Global?</h5>
+        <div class="mini-stat-grid">
+          <div><strong data-counter="20000">20,000+</strong><span>Students Guided</span></div>
+          <div><strong>500+</strong><span>Partner Universities</span></div>
+          <div><strong>30+</strong><span>Countries</span></div>
+          <div><strong>15+</strong><span>Years of Excellence</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <span>&copy; <span id="year">2026</span> ISMS Global Education Pvt. Ltd. All Rights Reserved.</span>
+      <nav>
+        <a href="privacy-policy.html">Privacy Policy</a>
+        <a href="privacy-policy.html#terms">Terms &amp; Conditions</a>
+        <a href="privacy-policy.html#refund">Refund Policy</a>
+        <a href="sitemap.html">Sitemap</a>
+      </nav>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="script.js"></script>
+  <script src="courses.js"></script>
+
+<!-- ===== SCROLL TO TOP BUTTON ===== -->
+<button class="scroll-top-fab" id="scrollTopBtn" aria-label="Scroll to top" onclick="window.scrollTo({top:0,behavior:'smooth'})">
+  <i class="fa-solid fa-arrow-up"></i>
+</button>
+
+<style>
+.scroll-top-fab {
+  position: fixed;
+  bottom: 96px;
+  right: 24px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: #0D47D8;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  box-shadow: 0 6px 20px rgba(13, 71, 216, 0.35);
+  z-index: 9000;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(12px);
+  transition: opacity 0.3s ease, visibility 0.3s ease, transform 0.3s ease, background 0.2s ease;
+}
+.scroll-top-fab.visible {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+.scroll-top-fab:hover {
+  background: #0A39A6;
+  transform: translateY(-3px);
+  box-shadow: 0 10px 28px rgba(13, 71, 216, 0.45);
+}
+.scroll-top-fab i {
+  pointer-events: none;
+}
+</style>
+
+<script>
+(function() {
+  var btn = document.getElementById('scrollTopBtn');
+  if (!btn) return;
+  window.addEventListener('scroll', function() {
+    if (window.scrollY > 300) {
+      btn.classList.add('visible');
+    } else {
+      btn.classList.remove('visible');
+    }
+  }, { passive: true });
+})();
+</script>
+</body>
+</html>

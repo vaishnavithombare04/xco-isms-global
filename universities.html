@@ -1,0 +1,1132 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Top Global Universities | Find Your Ideal University - ISMS Global</title>
+  <meta name="description" content="Explore 500+ top-ranked universities across the world. Compare rankings, courses, admission requirements, and find the perfect fit with ISMS Global.">
+  
+  <!-- Google Fonts -->
+  
+  
+  
+  
+  <!-- FontAwesome 6 CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="universities.css">
+  <!-- ===== NAVBAR OVERRIDE: Exact match with index.html ===== -->
+  <style>
+  /* Navigation Bar Theme Overrides - EXACT MATCH WITH INDEX.HTML */
+  :root {
+    --header-bg: #F4F8FF;
+    --header-border: #DCE5F3;
+    --nav-text: #11172A;
+    --nav-hover-bg: #E5EDFF;
+    --nav-accent: #0D47D8;
+    --dropdown-bg: #FFFFFF;
+    --gold-btn: #C79A3C;
+    --gold-btn-hover: #B5872E;
+  }
+
+  .site-header {
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+    width: 100% !important;
+    z-index: 9999 !important;
+    background: var(--header-bg) !important;
+    border-bottom: 1px solid var(--header-border) !important;
+    box-shadow: 0 4px 20px rgba(17,23,42,0.08) !important;
+    backdrop-filter: none !important;
+  }
+
+  body {
+    padding-top: 96px !important;
+  }
+
+  .header-inner {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    height: 72px !important;
+    gap: 12px !important;
+    max-width: 1720px !important;
+    width: 95% !important;
+    margin: 0 auto !important;
+    padding: 0 2.5rem !important;
+  }
+
+  .brand-logo-img {
+    height: 48px !important;
+    width: auto !important;
+    max-width: 200px !important;
+    object-fit: contain !important;
+    display: block !important;
+  }
+
+  .main-nav {
+    display: flex !important;
+    align-items: center !important;
+    gap: 0 !important;
+    flex: 1 !important;
+    justify-content: center !important;
+    font-family: 'Inter', Arial, sans-serif !important;
+  }
+
+  .main-nav a {
+    color: var(--nav-text) !important;
+    font-size: 14.5px !important;
+    font-weight: 600 !important;
+    padding: 20px 16px !important;
+    border-bottom: 3px solid transparent !important;
+    transition: background .15s ease, border-color .15s ease !important;
+    opacity: 1 !important;
+    text-decoration: none !important;
+    white-space: nowrap !important;
+    display: flex !important;
+    align-items: center !important;
+  }
+  .main-nav a:hover, .main-nav a.active {
+    background: var(--nav-hover-bg) !important;
+    color: var(--nav-accent) !important;
+    border-bottom: 3px solid var(--nav-accent) !important;
+  }
+  .main-nav a.active::after {
+    display: none !important;
+  }
+
+  .nav-dropdown {
+    position: relative !important;
+  }
+  .nav-dropdown-toggle {
+    color: var(--nav-text) !important;
+    font-size: 14.5px !important;
+    font-weight: 600 !important;
+    padding: 20px 16px !important;
+    border-bottom: 3px solid transparent !important;
+    transition: background .15s ease, border-color .15s ease !important;
+    opacity: 1 !important;
+    background: transparent !important;
+    border-top: none !important;
+    border-left: none !important;
+    border-right: none !important;
+    cursor: pointer !important;
+    display: flex !important;
+    align-items: center !important;
+    gap: 5px !important;
+    white-space: nowrap !important;
+    font-family: 'Inter', Arial, sans-serif !important;
+  }
+  .nav-dropdown-toggle i {
+    color: var(--nav-accent) !important;
+    font-size: 10px !important;
+  }
+  .nav-dropdown:hover .nav-dropdown-toggle {
+    background: var(--nav-hover-bg) !important;
+    border-bottom: 3px solid var(--nav-accent) !important;
+    color: var(--nav-accent) !important;
+  }
+
+  .nav-dropdown-menu {
+    position: absolute !important;
+    top: 100% !important;
+    left: 0 !important;
+    background: var(--dropdown-bg) !important;
+    border: 1px solid var(--header-border) !important;
+    border-top: 3px solid var(--nav-accent) !important;
+    box-shadow: 0 14px 30px rgba(13, 71, 216, 0.08) !important;
+    border-radius: 14px !important;
+    padding: 8px !important;
+    opacity: 0 !important;
+    visibility: hidden !important;
+    transform: translateY(6px) !important;
+    transition: all 0.2s ease !important;
+    min-width: 160px !important;
+  }
+  .nav-dropdown:hover .nav-dropdown-menu {
+    opacity: 1 !important;
+    visibility: visible !important;
+    transform: translateY(4px) !important;
+  }
+  .nav-dropdown-menu a {
+    color: var(--nav-text) !important;
+    border-left: 3px solid transparent !important;
+    border-bottom: none !important;
+    border-top: none !important;
+    padding: 10px 22px !important;
+    font-size: 13.5px !important;
+    font-weight: 500 !important;
+    background: transparent !important;
+  }
+  .nav-dropdown-menu a:hover {
+    background: var(--header-bg) !important;
+    border-left: 3px solid var(--nav-accent) !important;
+    color: var(--nav-accent) !important;
+  }
+
+  .dest-mega-menu {
+    min-width: 680px !important;
+    padding: 16px 20px !important;
+    display: grid !important;
+    grid-template-columns: repeat(3, 1fr) !important;
+    gap: 8px 12px !important;
+    left: 50% !important;
+    transform: translateX(-50%) translateY(8px) !important;
+    border-radius: 18px !important;
+    background: var(--dropdown-bg) !important;
+    border-top: 3px solid var(--nav-accent) !important;
+  }
+  .nav-dropdown:hover .dest-mega-menu {
+    transform: translateX(-50%) translateY(4px) !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+  }
+
+  .dest-drop-item {
+    display: flex !important;
+    align-items: center !important;
+    gap: 12px !important;
+    padding: 10px 12px !important;
+    border-radius: 12px !important;
+    border-bottom: none !important;
+    border-top: none !important;
+    transition: background 0.15s ease !important;
+    text-decoration: none !important;
+    color: inherit !important;
+  }
+  .dest-drop-item:hover {
+    background: var(--header-bg) !important;
+    border-left: 3px solid var(--nav-accent) !important;
+  }
+  .dest-drop-flag {
+    width: 26px !important;
+    height: 18px !important;
+    object-fit: cover !important;
+    border-radius: 3px !important;
+    flex-shrink: 0 !important;
+  }
+  .dest-drop-text {
+    display: flex !important;
+    flex-direction: column !important;
+    line-height: 1.25 !important;
+  }
+  .dest-drop-text strong {
+    font-size: 13.5px !important;
+    font-weight: 700 !important;
+    color: var(--nav-text) !important;
+  }
+  .dest-drop-text span {
+    font-size: 11px !important;
+    color: #64748B !important;
+    margin-top: 2px !important;
+  }
+
+  .header-actions {
+    display: flex !important;
+    align-items: center !important;
+    gap: 8px !important;
+    flex-shrink: 0 !important;
+  }
+  .header-phone {
+    display: flex !important;
+    align-items: center !important;
+    gap: 10px !important;
+    color: var(--nav-text) !important;
+    text-decoration: none !important;
+    font-size: 12.5px !important;
+  }
+  .header-phone i {
+    width: 36px !important;
+    height: 36px !important;
+    border-radius: 50% !important;
+    background: var(--nav-hover-bg) !important;
+    color: var(--nav-accent) !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+  }
+  .header-phone small {
+    color: #667085 !important;
+  }
+  .header-phone strong {
+    color: var(--nav-text) !important;
+    font-weight: 700 !important;
+    font-size: 13.5px !important;
+  }
+
+  .site-header .btn-primary {
+    background: var(--gold-btn) !important;
+    color: #FFFFFF !important;
+    border: none !important;
+    font-weight: 700 !important;
+    box-shadow: none !important;
+    border-radius: 8px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+  }
+  .site-header .btn-primary:hover {
+    background: var(--gold-btn-hover) !important;
+    color: #FFFFFF !important;
+    transform: none !important;
+  }
+
+  .nav-toggle {
+    display: none !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    gap: 5px !important;
+    background: none !important;
+    border: none !important;
+    padding: 8px !important;
+    cursor: pointer !important;
+  }
+  .nav-toggle span {
+    width: 24px !important;
+    height: 2px !important;
+    background: var(--nav-text) !important;
+    border-radius: 2px !important;
+    transition: 0.3s ease !important;
+    display: block !important;
+  }
+
+  @media (max-width: 1160px) {
+    .nav-toggle { display: flex !important; }
+    .main-nav {
+      position: fixed !important;
+      inset: 72px 0 0 0 !important;
+      background: #fff !important;
+      flex-direction: column !important;
+      align-items: stretch !important;
+      padding: 24px !important;
+      gap: 4px !important;
+      overflow-y: auto !important;
+      transform: translateX(100%) !important;
+      transition: transform 0.3s ease !important;
+      box-shadow: 0 20px 40px rgba(0,0,0,0.1) !important;
+      z-index: 9998 !important;
+    }
+    .main-nav.open { transform: translateX(0) !important; }
+    .main-nav a, .nav-dropdown-toggle {
+      padding: 14px 8px !important;
+      border-bottom: 1px solid #E2E8F0 !important;
+      width: 100% !important;
+      font-size: 15px !important;
+      border-top: none !important;
+      border-left: none !important;
+      border-right: none !important;
+    }
+    .dest-mega-menu {
+      min-width: unset !important;
+      grid-template-columns: 1fr !important;
+      transform: none !important;
+      left: 0 !important;
+      position: static !important;
+      box-shadow: none !important;
+      border: none !important;
+    }
+    .nav-dropdown-menu {
+      position: static !important;
+      opacity: 1 !important;
+      visibility: visible !important;
+      transform: none !important;
+      display: none !important;
+    }
+    .nav-dropdown.open .nav-dropdown-menu { display: block !important; }
+  }
+  </style>
+</head>
+<body>
+
+  <!-- ==================== 1. SITE HEADER ==================== -->
+  <!-- ============ HEADER ============ -->
+<header class="site-header" id="siteHeader">
+  <div class="container header-inner">
+    <a href="index.html" class="logo">
+      <img src="assets/logo.png" alt="ISMS Global Education Logo" class="brand-logo-img">
+    </a>
+
+    <nav class="main-nav" id="mainNav">
+      <a href="index.html">Home</a>
+      <a href="about.html">About Us</a>
+      <div class="nav-dropdown">
+        <button class="nav-dropdown-toggle">Study Destinations <i class="fa-solid fa-chevron-down"></i></button>
+        <div class="nav-dropdown-menu dest-mega-menu">
+          <a href="uk-destination.html" class="dest-drop-item">
+            <img src="assets/flag_w40_gb.png" alt="UK Flag" class="dest-drop-flag">
+            <div class="dest-drop-text">
+              <strong>United Kingdom</strong>
+              <span>Top-ranked universities</span>
+            </div>
+          </a>
+          <a href="index.html#destinations" class="dest-drop-item">
+            <img src="assets/flag_w40_ie.png" alt="Ireland Flag" class="dest-drop-flag">
+            <div class="dest-drop-text">
+              <strong>Ireland</strong>
+              <span>EU residency gateway</span>
+            </div>
+          </a>
+          <a href="index.html#destinations" class="dest-drop-item">
+            <img src="assets/flag_w40_au.png" alt="Australia Flag" class="dest-drop-flag">
+            <div class="dest-drop-text">
+              <strong>Australia</strong>
+              <span>World-class education</span>
+            </div>
+          </a>
+          <a href="index.html#destinations" class="dest-drop-item">
+            <img src="assets/flag_w40_us.png" alt="USA Flag" class="dest-drop-flag">
+            <div class="dest-drop-text">
+              <strong>USA</strong>
+              <span>Leading research institutions</span>
+            </div>
+          </a>
+          <a href="index.html#destinations" class="dest-drop-item">
+            <img src="assets/flag_w40_nz.png" alt="New Zealand Flag" class="dest-drop-flag">
+            <div class="dest-drop-text">
+              <strong>New Zealand</strong>
+              <span>Safe, scenic, welcoming</span>
+            </div>
+          </a>
+          <a href="dubai-destination.html" class="dest-drop-item">
+            <img src="assets/flag_w40_ae.png" alt="Dubai Flag" class="dest-drop-flag">
+            <div class="dest-drop-text">
+              <strong>Dubai</strong>
+              <span>Global business hub</span>
+            </div>
+          </a>
+          <a href="index.html#destinations" class="dest-drop-item">
+            <img src="assets/flag_w40_fr.png" alt="France Flag" class="dest-drop-flag">
+            <div class="dest-drop-text">
+              <strong>France</strong>
+              <span>Art, culture &amp; innovation</span>
+            </div>
+          </a>
+          <a href="index.html#destinations" class="dest-drop-item">
+            <img src="assets/flag_w40_de.png" alt="Germany Flag" class="dest-drop-flag">
+            <div class="dest-drop-text">
+              <strong>Germany</strong>
+              <span>Engineering excellence</span>
+            </div>
+          </a>
+          <a href="index.html#destinations" class="dest-drop-item">
+            <img src="assets/flag_w40_nl.png" alt="Netherlands Flag" class="dest-drop-flag">
+            <div class="dest-drop-text">
+              <strong>Netherlands</strong>
+              <span>English-taught programmes</span>
+            </div>
+          </a>
+          <a href="index.html#destinations" class="dest-drop-item">
+            <img src="assets/flag_w40_es.png" alt="Spain Flag" class="dest-drop-flag">
+            <div class="dest-drop-text">
+              <strong>Spain</strong>
+              <span>Vibrant student culture</span>
+            </div>
+          </a>
+        </div>
+      </div>
+      <a href="universities.html">Universities</a>
+      <a href="courses.html">Courses</a>
+      <a href="services.html">Services</a>
+      <a href="Scholarship.html">Scholarships</a>
+      <a href="Blog.html">Blog</a>
+      <a href="contact.html">Contact Us</a>
+    </nav>
+
+    <div class="header-actions">
+      <a href="tel:+919561776600" class="header-phone">
+        <i class="fa-solid fa-phone"></i>
+        <span><strong>Call Now</strong></span>
+      </a>
+      <a href="index.html#contact" class="btn btn-primary btn-sm" style="font-size:12px; padding: 0 14px; height: 36px;">Get FREE Counselling</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+  <!-- MAIN CONTENT AREA -->
+  <main>
+
+    <!-- ==================== 2. HERO SECTION ==================== -->
+    <section class="uni-hero-section">
+      <div class="container">
+        <div class="uni-hero-inner">
+          <div class="uni-hero-content">
+            <nav class="uni-breadcrumb">
+              <a href="index.html">Home</a> &gt;
+              <span style="color: var(--uni-navy); font-weight: 600;">Universities</span>
+            </nav>
+
+            <h1 class="uni-hero-title">
+              Find the Right University<br>
+              for Your Future
+            </h1>
+            <p class="uni-hero-sub">
+              Explore 500+ top ranked universities across the world.<br>
+              Find the perfect fit for your academic and career goals.
+            </p>
+          </div>
+
+          <div class="uni-hero-media">
+            <div class="uni-hero-badge-floating">
+              <i class="fa-solid fa-graduation-cap" style="color:var(--uni-primary);"></i>
+              Empowering Dreams, Building Futures
+            </div>
+            <img src="assets/Girl.png" alt="Student Girl in front of University Campus" class="uni-hero-student-img">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== 3. FLOATING SEARCH & FILTER CARD ==================== -->
+    <div class="container">
+      <div class="uni-search-wrapper">
+        <div class="uni-search-card">
+          <div class="uni-search-form-grid">
+            <div class="uni-form-group">
+              <label for="uniSearchInput">Search University</label>
+              <div class="uni-input-box">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="text" id="uniSearchInput" placeholder="Search by university name...">
+              </div>
+            </div>
+
+            <div class="uni-form-group">
+              <label for="uniDestSelect">Study Destination</label>
+              <div class="uni-select-wrapper">
+                <select id="uniDestSelect">
+                  <option value="all">Select Country</option>
+                  <option value="United Kingdom">United Kingdom</option>
+                  <option value="United States">United States</option>
+                  <option value="Australia">Australia</option>
+                  <option value="Canada">Canada</option>
+                  <option value="Germany">Germany</option>
+                </select>
+                <i class="fa-solid fa-chevron-down"></i>
+              </div>
+            </div>
+
+            <div class="uni-form-group">
+              <label for="uniLevelSelect">Course Level</label>
+              <div class="uni-select-wrapper">
+                <select id="uniLevelSelect">
+                  <option value="all">All Levels</option>
+                  <option value="Undergraduate">Undergraduate</option>
+                  <option value="Postgraduate">Postgraduate</option>
+                  <option value="Diploma">Diploma</option>
+                  <option value="PhD">PhD</option>
+                </select>
+                <i class="fa-solid fa-chevron-down"></i>
+              </div>
+            </div>
+
+            <button type="button" class="btn-uni-search" id="btnUniSearch">
+              <i class="fa-solid fa-magnifying-glass"></i> Search Universities
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Stats Highlights Row -->
+      <div class="uni-stats-highlights-row">
+        <div class="uni-stat-item-card">
+          <div class="uni-stat-icon-circle"><i class="fa-solid fa-building-columns"></i></div>
+          <div class="uni-stat-info">
+            <strong>500+ Universities</strong>
+            <span>World-Class Institutions</span>
+          </div>
+        </div>
+
+        <div class="uni-stat-item-card">
+          <div class="uni-stat-icon-circle"><i class="fa-solid fa-globe"></i></div>
+          <div class="uni-stat-info">
+            <strong>20+ Countries</strong>
+            <span>Top Study Destinations</span>
+          </div>
+        </div>
+
+        <div class="uni-stat-item-card">
+          <div class="uni-stat-icon-circle"><i class="fa-solid fa-graduation-cap"></i></div>
+          <div class="uni-stat-info">
+            <strong>1000+ Courses</strong>
+            <span>Wide Range of Programs</span>
+          </div>
+        </div>
+
+        <div class="uni-stat-item-card">
+          <div class="uni-stat-icon-circle"><i class="fa-solid fa-user-tie"></i></div>
+          <div class="uni-stat-info">
+            <strong>Expert Guidance</strong>
+            <span>Personalized Support</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- ==================== 4. MAIN LAYOUT (SIDEBAR + GRID) ==================== -->
+      <div class="uni-main-layout">
+
+        <!-- LEFT SIDEBAR FILTER PANEL -->
+        <aside class="uni-filter-sidebar">
+          <div class="uni-filter-header">
+            <h3>Filter Universities</h3>
+            <button type="button" class="btn-uni-clear" id="btnUniClear">Clear All</button>
+          </div>
+
+          <!-- Filter Group 1: Study Destination -->
+          <div class="uni-filter-section">
+            <div class="uni-filter-title">
+              <span>Study Destination</span>
+              <i class="fa-solid fa-chevron-up"></i>
+            </div>
+            <div class="uni-checkbox-list">
+              <label class="uni-checkbox-row">
+                <input type="checkbox" checked> <span>All Countries</span>
+              </label>
+              <label class="uni-checkbox-row">
+                <input type="checkbox"> <span>United Kingdom</span> <span class="count">(120)</span>
+              </label>
+              <label class="uni-checkbox-row">
+                <input type="checkbox"> <span>Australia</span> <span class="count">(85)</span>
+              </label>
+              <label class="uni-checkbox-row">
+                <input type="checkbox"> <span>Canada</span> <span class="count">(70)</span>
+              </label>
+              <label class="uni-checkbox-row">
+                <input type="checkbox"> <span>United States</span> <span class="count">(95)</span>
+              </label>
+              <label class="uni-checkbox-row">
+                <input type="checkbox"> <span>Germany</span> <span class="count">(40)</span>
+              </label>
+              <a href="#" style="font-size:12.5px; font-weight:600; color:var(--uni-primary); text-decoration:none; margin-top:4px;">+ Show More</a>
+            </div>
+          </div>
+
+          <!-- Filter Group 2: Course Level -->
+          <div class="uni-filter-section">
+            <div class="uni-filter-title">
+              <span>Course Level</span>
+              <i class="fa-solid fa-chevron-up"></i>
+            </div>
+            <div class="uni-checkbox-list">
+              <label class="uni-checkbox-row">
+                <input type="checkbox" checked> <span>All Levels</span>
+              </label>
+              <label class="uni-checkbox-row">
+                <input type="checkbox"> <span>Undergraduate</span>
+              </label>
+              <label class="uni-checkbox-row">
+                <input type="checkbox"> <span>Postgraduate</span>
+              </label>
+              <label class="uni-checkbox-row">
+                <input type="checkbox"> <span>Diploma</span>
+              </label>
+              <label class="uni-checkbox-row">
+                <input type="checkbox"> <span>PhD</span>
+              </label>
+            </div>
+          </div>
+
+          <!-- Filter Group 3: Popular Courses -->
+          <div class="uni-filter-section">
+            <div class="uni-filter-title">
+              <span>Popular Courses</span>
+              <i class="fa-solid fa-chevron-up"></i>
+            </div>
+            <div class="uni-checkbox-list">
+              <label class="uni-checkbox-row">
+                <input type="checkbox"> <span>Business &amp; Management</span>
+              </label>
+              <label class="uni-checkbox-row">
+                <input type="checkbox"> <span>Engineering</span>
+              </label>
+              <label class="uni-checkbox-row">
+                <input type="checkbox"> <span>Computer Science</span>
+              </label>
+              <label class="uni-checkbox-row">
+                <input type="checkbox"> <span>Data Science</span>
+              </label>
+              <label class="uni-checkbox-row">
+                <input type="checkbox"> <span>Health &amp; Medicine</span>
+              </label>
+              <a href="#" style="font-size:12.5px; font-weight:600; color:var(--uni-primary); text-decoration:none; margin-top:4px;">+ Show More</a>
+            </div>
+          </div>
+
+          <!-- Filter Group 4: University Type -->
+          <div class="uni-filter-section">
+            <div class="uni-filter-title">
+              <span>University Type</span>
+              <i class="fa-solid fa-chevron-up"></i>
+            </div>
+            <div class="uni-checkbox-list">
+              <label class="uni-checkbox-row">
+                <input type="checkbox" checked> <span>All Types</span>
+              </label>
+              <label class="uni-checkbox-row">
+                <input type="checkbox"> <span>Public</span>
+              </label>
+              <label class="uni-checkbox-row">
+                <input type="checkbox"> <span>Private</span>
+              </label>
+              <label class="uni-checkbox-row">
+                <input type="checkbox"> <span>Research Institute</span>
+              </label>
+            </div>
+          </div>
+
+          <!-- Filter Group 5: QS World Ranking -->
+          <div class="uni-filter-section">
+            <div class="uni-filter-title">
+              <span>QS World University Ranking</span>
+              <i class="fa-solid fa-chevron-up"></i>
+            </div>
+            <div class="uni-range-slider-wrap">
+              <input type="range" id="qsRangeInput" min="1" max="500" value="500">
+              <div class="uni-range-labels">
+                <span>Top 1</span>
+                <span>Max Rank: <strong id="qsRangeValue" style="color:var(--uni-primary);">500</strong></span>
+              </div>
+            </div>
+          </div>
+
+          <button type="button" class="btn-apply-uni-filter">
+            <i class="fa-solid fa-filter"></i> Apply Filter
+          </button>
+        </aside>
+
+        <!-- RIGHT UNIVERSITY CARDS CONTENT -->
+        <div class="uni-right-content">
+          
+          <!-- Top Results & View Bar -->
+          <div class="uni-top-bar">
+            <div class="uni-results-count" id="uniResultsCountText">
+              Showing 1-12 of 528 Universities
+            </div>
+
+            <div class="uni-controls-right">
+              <div style="display:flex; align-items:center; gap:8px; font-size:13.5px; color:#64748B;">
+                <label for="uniSortSelect">Sort by:</label>
+                <select id="uniSortSelect" class="uni-sort-select">
+                  <option value="popularity">Popularity</option>
+                  <option value="rank">QS Ranking</option>
+                  <option value="name">University Name</option>
+                </select>
+              </div>
+
+              <div style="display:flex; gap:6px;">
+                <button type="button" class="btn-view-toggle active" id="btnUniGridView" aria-label="Grid View" style="width:36px; height:36px; border-radius:8px; border:1px solid #CBD5E1; background:var(--uni-primary); color:#FFF; cursor:pointer;"><i class="fa-solid fa-table-cells-large"></i></button>
+                <button type="button" class="btn-view-toggle" id="btnUniListView" aria-label="List View" style="width:36px; height:36px; border-radius:8px; border:1px solid #CBD5E1; background:#FFF; color:#64748B; cursor:pointer;"><i class="fa-solid fa-list"></i></button>
+              </div>
+            </div>
+          </div>
+
+          <!-- 8 UNIVERSITY CARDS GRID -->
+          <div class="uni-cards-grid" id="uniCardsContainer">
+
+            <!-- Card 1: Oxford -->
+            <div class="uni-card-item" data-name="University of Oxford" data-dest="United Kingdom" data-level="all" data-qs="1">
+              <div class="uni-card-img-wrap">
+                <div class="uni-badge-logo-overlay">OXF</div>
+                <img src="assets/img_photo-1541829070764-84a7d30dd3f3.jpg" alt="University of Oxford Campus" class="campus-photo">
+              </div>
+              <div class="uni-card-body">
+                <div class="uni-flag-row">
+                  <img src="assets/flag_w40_gb.png" alt="UK Flag" style="width:16px; border-radius:2px;"> United Kingdom
+                </div>
+                <h3 class="uni-card-title">University of Oxford</h3>
+                <div class="uni-qs-rank-chip">#1 QS World University Ranking 2025</div>
+                <div class="uni-location-text">Oxford, United Kingdom</div>
+                <div class="uni-courses-count">400+ Courses</div>
+                <div class="uni-card-actions">
+                  <a href="university-details.html" class="btn-uni-details">View Details</a>
+                  <button type="button" class="btn-uni-bookmark" aria-label="Bookmark University"><i class="fa-regular fa-bookmark"></i></button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 2: Cambridge -->
+            <div class="uni-card-item" data-name="University of Cambridge" data-dest="United Kingdom" data-level="all" data-qs="2">
+              <div class="uni-card-img-wrap">
+                <div class="uni-badge-logo-overlay">CAM</div>
+                <img src="assets/img_photo-1513635269975-59663e0ac1ad.jpg" alt="University of Cambridge Campus" class="campus-photo">
+              </div>
+              <div class="uni-card-body">
+                <div class="uni-flag-row">
+                  <img src="assets/flag_w40_gb.png" alt="UK Flag" style="width:16px; border-radius:2px;"> United Kingdom
+                </div>
+                <h3 class="uni-card-title">University of Cambridge</h3>
+                <div class="uni-qs-rank-chip">#2 QS World University Ranking 2025</div>
+                <div class="uni-location-text">Cambridge, United Kingdom</div>
+                <div class="uni-courses-count">350+ Courses</div>
+                <div class="uni-card-actions">
+                  <a href="university-details.html" class="btn-uni-details">View Details</a>
+                  <button type="button" class="btn-uni-bookmark" aria-label="Bookmark University"><i class="fa-regular fa-bookmark"></i></button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 3: MIT -->
+            <div class="uni-card-item" data-name="Massachusetts Institute of Technology (MIT)" data-dest="United States" data-level="all" data-qs="1">
+              <div class="uni-card-img-wrap">
+                <div class="uni-badge-logo-overlay">MIT</div>
+                <img src="assets/img_photo-1517694712202-14dd9538aa97.jpg" alt="MIT Campus" class="campus-photo">
+              </div>
+              <div class="uni-card-body">
+                <div class="uni-flag-row">
+                  <img src="assets/flag_w40_us.png" alt="USA Flag" style="width:16px; border-radius:2px;"> United States
+                </div>
+                <h3 class="uni-card-title">Massachusetts Institute of Technology (MIT)</h3>
+                <div class="uni-qs-rank-chip">#1 QS World University Ranking 2025</div>
+                <div class="uni-location-text">Cambridge, Massachusetts, USA</div>
+                <div class="uni-courses-count">200+ Courses</div>
+                <div class="uni-card-actions">
+                  <a href="university-details.html" class="btn-uni-details">View Details</a>
+                  <button type="button" class="btn-uni-bookmark" aria-label="Bookmark University"><i class="fa-regular fa-bookmark"></i></button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 4: Stanford -->
+            <div class="uni-card-item" data-name="Stanford University" data-dest="United States" data-level="all" data-qs="6">
+              <div class="uni-card-img-wrap">
+                <div class="uni-badge-logo-overlay">STAN</div>
+                <img src="assets/img_photo-1507003211169-0a1dd7228f2d.jpg" alt="Stanford Campus" class="campus-photo">
+              </div>
+              <div class="uni-card-body">
+                <div class="uni-flag-row">
+                  <img src="assets/flag_w40_us.png" alt="USA Flag" style="width:16px; border-radius:2px;"> United States
+                </div>
+                <h3 class="uni-card-title">Stanford University</h3>
+                <div class="uni-qs-rank-chip">#6 QS World University Ranking 2025</div>
+                <div class="uni-location-text">Stanford, California, USA</div>
+                <div class="uni-courses-count">220+ Courses</div>
+                <div class="uni-card-actions">
+                  <a href="university-details.html" class="btn-uni-details">View Details</a>
+                  <button type="button" class="btn-uni-bookmark" aria-label="Bookmark University"><i class="fa-regular fa-bookmark"></i></button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 5: Melbourne -->
+            <div class="uni-card-item" data-name="The University of Melbourne" data-dest="Australia" data-level="all" data-qs="13">
+              <div class="uni-card-img-wrap">
+                <div class="uni-badge-logo-overlay">MELB</div>
+                <img src="assets/img_photo-1551288049-bebda4e38f71.jpg" alt="The University of Melbourne Campus" class="campus-photo">
+              </div>
+              <div class="uni-card-body">
+                <div class="uni-flag-row">
+                  <img src="assets/flag_w40_au.png" alt="Australia Flag" style="width:16px; border-radius:2px;"> Australia
+                </div>
+                <h3 class="uni-card-title">The University of Melbourne</h3>
+                <div class="uni-qs-rank-chip">#13 QS World University Ranking 2025</div>
+                <div class="uni-location-text">Melbourne, Australia</div>
+                <div class="uni-courses-count">450+ Courses</div>
+                <div class="uni-card-actions">
+                  <a href="university-details.html" class="btn-uni-details">View Details</a>
+                  <button type="button" class="btn-uni-bookmark" aria-label="Bookmark University"><i class="fa-regular fa-bookmark"></i></button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 6: Toronto -->
+            <div class="uni-card-item" data-name="University of Toronto" data-dest="Canada" data-level="all" data-qs="21">
+              <div class="uni-card-img-wrap">
+                <div class="uni-badge-logo-overlay">UofT</div>
+                <img src="assets/img_photo-1454165804606-c3d57bc86b40.jpg" alt="University of Toronto Campus" class="campus-photo">
+              </div>
+              <div class="uni-card-body">
+                <div class="uni-flag-row">
+                  <img src="assets/flag_w40_ca.png" alt="Canada Flag" style="width:16px; border-radius:2px;"> Canada
+                </div>
+                <h3 class="uni-card-title">University of Toronto</h3>
+                <div class="uni-qs-rank-chip">#21 QS World University Ranking 2025</div>
+                <div class="uni-location-text">Toronto, Ontario, Canada</div>
+                <div class="uni-courses-count">700+ Courses</div>
+                <div class="uni-card-actions">
+                  <a href="university-details.html" class="btn-uni-details">View Details</a>
+                  <button type="button" class="btn-uni-bookmark" aria-label="Bookmark University"><i class="fa-regular fa-bookmark"></i></button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 7: TUM Munich -->
+            <div class="uni-card-item" data-name="Technical University of Munich" data-dest="Germany" data-level="all" data-qs="28">
+              <div class="uni-card-img-wrap">
+                <div class="uni-badge-logo-overlay">TUM</div>
+                <img src="assets/img_photo-1581092160607-ee22621dd758.jpg" alt="Technical University of Munich Campus" class="campus-photo">
+              </div>
+              <div class="uni-card-body">
+                <div class="uni-flag-row">
+                  <img src="assets/flag_w40_de.png" alt="Germany Flag" style="width:16px; border-radius:2px;"> Germany
+                </div>
+                <h3 class="uni-card-title">Technical University of Munich</h3>
+                <div class="uni-qs-rank-chip">#28 QS World University Ranking 2025</div>
+                <div class="uni-location-text">Munich, Germany</div>
+                <div class="uni-courses-count">300+ Courses</div>
+                <div class="uni-card-actions">
+                  <a href="university-details.html" class="btn-uni-details">View Details</a>
+                  <button type="button" class="btn-uni-bookmark" aria-label="Bookmark University"><i class="fa-regular fa-bookmark"></i></button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 8: Sydney -->
+            <div class="uni-card-item" data-name="The University of Sydney" data-dest="Australia" data-level="all" data-qs="18">
+              <div class="uni-card-img-wrap">
+                <div class="uni-badge-logo-overlay">USYD</div>
+                <img src="assets/img_photo-1506973035872-a4ec16b8e8d9.jpg" alt="The University of Sydney Campus" class="campus-photo">
+              </div>
+              <div class="uni-card-body">
+                <div class="uni-flag-row">
+                  <img src="assets/flag_w40_au.png" alt="Australia Flag" style="width:16px; border-radius:2px;"> Australia
+                </div>
+                <h3 class="uni-card-title">The University of Sydney</h3>
+                <div class="uni-qs-rank-chip">#18 QS World University Ranking 2025</div>
+                <div class="uni-location-text">Sydney, Australia</div>
+                <div class="uni-courses-count">400+ Courses</div>
+                <div class="uni-card-actions">
+                  <a href="university-details.html" class="btn-uni-details">View Details</a>
+                  <button type="button" class="btn-uni-bookmark" aria-label="Bookmark University"><i class="fa-regular fa-bookmark"></i></button>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+      <!-- ==================== 5. GLOBAL UNIVERSITY PARTNERS ==================== -->
+      <section class="uni-partners-section">
+        <h2>Our Global University Partners</h2>
+
+        <div class="uni-partners-row">
+          <div class="partner-logo-card"><i class="fa-solid fa-building-columns" style="margin-right:6px; color:var(--uni-primary);"></i> University of Oxford</div>
+          <div class="partner-logo-card"><i class="fa-solid fa-graduation-cap" style="margin-right:6px; color:#C10D0D;"></i> McGill University</div>
+          <div class="partner-logo-card"><i class="fa-solid fa-landmark" style="margin-right:6px; color:#0A1233;"></i> Univ. of Melbourne</div>
+          <div class="partner-logo-card"><i class="fa-solid fa-award" style="margin-right:6px; color:#EF4444;"></i> NUS Singapore</div>
+          <div class="partner-logo-card"><i class="fa-solid fa-building-columns" style="margin-right:6px; color:var(--uni-primary);"></i> Univ. of Toronto</div>
+          <div class="partner-logo-card"><i class="fa-solid fa-microchip" style="margin-right:6px; color:#10B981;"></i> ETH Zürich</div>
+        </div>
+
+        <button type="button" class="btn-view-partners">View All Partners <i class="fa-solid fa-arrow-right"></i></button>
+      </section>
+
+      <!-- ==================== 6. 6 STATS HIGHLIGHTS BAR ==================== -->
+      <div class="uni-6stats-bar">
+        <div class="uni-6stat-item">
+          <div class="uni-6stat-icon"><i class="fa-solid fa-building-columns"></i></div>
+          <strong>500+</strong>
+          <span>Partner Universities</span>
+        </div>
+
+        <div class="uni-6stat-item">
+          <div class="uni-6stat-icon"><i class="fa-solid fa-globe"></i></div>
+          <strong>20+</strong>
+          <span>Study Destinations</span>
+        </div>
+
+        <div class="uni-6stat-item">
+          <div class="uni-6stat-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+          <strong>1000+</strong>
+          <span>Courses Available</span>
+        </div>
+
+        <div class="uni-6stat-item">
+          <div class="uni-6stat-icon"><i class="fa-solid fa-users"></i></div>
+          <strong>10,000+</strong>
+          <span>Students Guided</span>
+        </div>
+
+        <div class="uni-6stat-item">
+          <div class="uni-6stat-icon"><i class="fa-solid fa-shield-halved"></i></div>
+          <strong>95%+</strong>
+          <span>Visa Success Rate</span>
+        </div>
+
+        <div class="uni-6stat-item">
+          <div class="uni-6stat-icon"><i class="fa-solid fa-award"></i></div>
+          <strong>18+</strong>
+          <span>Years of Excellence</span>
+        </div>
+      </div>
+
+      <!-- ==================== 7. CONSULTATION BANNER ==================== -->
+      <section class="uni-consultation-banner">
+        <div class="uni-banner-inner">
+          <img src="assets/Boy.png" alt="Smiling Student Counsellor" class="uni-cta-left-student">
+          
+          <div class="uni-cta-center">
+            <h2>Need Help Choosing the Right University?</h2>
+            <p>Our expert counsellors will help you find the best university based on your profile, goals and budget.</p>
+          </div>
+
+          <div class="uni-cta-actions">
+            <button type="button" class="btn-cta-white">Book Free Counselling</button>
+            <button type="button" class="btn-cta-outline">
+              <i class="fa-solid fa-headset"></i> Talk to an Expert
+            </button>
+          </div>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <!-- ==================== 8. SITE FOOTER ==================== -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="logo logo-footer"><img src="assets/logo.png" alt="ISMS Global Education Logo" class="brand-logo-img footer-logo-img"></a>
+        <p>ISMS Global is your trusted partner for studying abroad. We provide end-to-end support for admissions, visas, scholarships and a successful international education journey.</p>
+        <ul class="footer-highlights">
+          <li><i class="fa-solid fa-earth-americas"></i><div><strong>Global Expertise</strong><span>Years of experience in international education and student success.</span></div></li>
+          <li><i class="fa-solid fa-user-group"></i><div><strong>Student First</strong><span>Personalized guidance and support at every step of your journey.</span></div></li>
+          <li><i class="fa-solid fa-shield-halved"></i><div><strong>Integrity &amp; Trust</strong><span>Transparent processes and honest advice you can rely on.</span></div></li>
+        </ul>
+      </div>
+
+      <div class="footer-col"><h5>Quick Links</h5>
+        <ul><li><a href="index.html">Home</a></li><li><a href="about.html">About Us</a></li><li><a href="services.html">Our Services</a></li><li><a href="study-abroad-counselling.html">Study Abroad Counselling</a></li><li><a href="index.html#destinations">Study Destinations</a></li><li><a href="universities.html">Universities</a></li><li><a href="courses.html">Courses</a></li><li><a href="Scholarship.html">Scholarships</a></li><li><a href="index.html#blog">Blogs &amp; Resources</a></li><li><a href="contact.html">Contact Us</a></li><li><a href="sitemap.html">Sitemap</a></li></ul>
+      </div>
+
+      <div class="footer-col"><h5>Study Destinations</h5>
+        <ul>
+          <li><a href="index.html#destinations"><img src="assets/flag_w40_ca.png" class="flag-icon" alt="Canada Flag"> Canada</a></li>
+          <li><a href="index.html#destinations"><img src="assets/flag_w40_us.png" class="flag-icon" alt="USA Flag"> USA</a></li>
+          <li><a href="index.html#destinations"><img src="assets/flag_w40_gb.png" class="flag-icon" alt="UK Flag"> UK</a></li>
+          <li><a href="index.html#destinations"><img src="assets/flag_w40_au.png" class="flag-icon" alt="Australia Flag"> Australia</a></li>
+          <li><a href="index.html#destinations"><img src="assets/flag_w40_de.png" class="flag-icon" alt="Germany Flag"> Germany</a></li>
+          <li><a href="index.html#destinations"><img src="assets/flag_w40_ie.png" class="flag-icon" alt="Ireland Flag"> Ireland</a></li>
+          <li><a href="dubai-destination.html"><img src="assets/flag_w40_ae.png" class="flag-icon" alt="Dubai Flag"> Dubai</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col"><h5>Popular Courses</h5>
+        <ul><li><a href="courses.html">Business &amp; Management</a></li><li><a href="courses.html">Engineering</a></li><li><a href="courses.html">Information Technology</a></li><li><a href="courses.html">Health &amp; Medicine</a></li><li><a href="courses.html">Data Science &amp; AI</a></li><li><a href="courses.html">Law</a></li></ul>
+      </div>
+
+      <div class="footer-col"><h5>Our Services</h5>
+        <ul><li><a href="services.html#step-01">Course Selection</a></li><li><a href="services.html#step-02">Application Steps</a></li><li><a href="services.html#step-03">After Offer Letter</a></li><li><a href="services.html#step-04">Scholarships &amp; Loans</a></li><li><a href="services.html#step-05">Visa Preparation</a></li><li><a href="study-abroad-counselling.html">Study Abroad Counselling</a></li></ul>
+      </div>
+
+      <div class="footer-col footer-newsletter"><h5>Newsletter</h5>
+        <p>Stay updated with the latest study abroad news, scholarships, events and useful resources.</p>
+        <form class="newsletter-form" onsubmit="return false;">
+          <input type="email" placeholder="Enter your email address" required>
+          <button type="submit" aria-label="Subscribe"><i class="fa-solid fa-paper-plane"></i></button>
+        </form>
+        <h6>Follow Us</h6>
+        <div class="social-row">
+          <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+          <a href="#" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="container footer-offices">
+      <div class="offices-col"><h5>Our Offices</h5>
+        <div class="office"><i class="fa-solid fa-location-dot"></i><div><strong>India &ndash; Head Office</strong><span>ISMS Global Education Pvt. Ltd. Baner, Pune, Maharashtra 411045, India</span><small>info@ismsglobal.com | +91 95 61 77 66 00</small></div></div>
+        <div class="office"><i class="fa-solid fa-location-dot"></i><div><strong>Canada Office</strong><span>100 Consilium Place, Suite 200, Scarborough, ON M1H 3E3, Canada</span><small>canada@ismsglobal.com | +1 437 774 5006</small></div></div>
+        <div class="office"><i class="fa-solid fa-location-dot"></i><div><strong>UK Office</strong><span>85 Great Portland Street, London, W1W 7LT, United Kingdom</span><small>uk@ismsglobal.com | +44 20 3868 0743</small></div></div>
+      </div>
+      <div class="offices-col"><h5>Accreditations &amp; Partnerships</h5>
+        <div class="accred-grid">
+          <div class="accred-badge"><i class="fa-solid fa-circle-nodes"></i>ICEF<small>Connect. Recruit. Grow.</small></div>
+          <div class="accred-badge"><i class="fa-regular fa-circle"></i>British Council<small>Certified Agent</small></div>
+          <div class="accred-badge"><i class="fa-solid fa-award"></i>QEAC Australia<small>Qualified Education Agent Counsellor</small></div>
+          <div class="accred-badge"><i class="fa-solid fa-a"></i>AAERI<small>Member</small></div>
+        </div>
+      </div>
+      <div class="offices-col"><h5>Why Choose ISMS Global?</h5>
+        <div class="mini-stat-grid">
+          <div><strong data-counter="20000">20,000+</strong><span>Students Guided</span></div>
+          <div><strong>500+</strong><span>Partner Universities</span></div>
+          <div><strong>30+</strong><span>Countries</span></div>
+          <div><strong>15+</strong><span>Years of Excellence</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <span>&copy; <span id="year">2026</span> ISMS Global Education Pvt. Ltd. All Rights Reserved.</span>
+      <nav>
+        <a href="privacy-policy.html">Privacy Policy</a>
+        <a href="privacy-policy.html#terms">Terms &amp; Conditions</a>
+        <a href="privacy-policy.html#refund">Refund Policy</a>
+        <a href="sitemap.html">Sitemap</a>
+      </nav>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="script.js"></script>
+  <script src="universities.js"></script>
+
+<!-- ===== SCROLL TO TOP BUTTON ===== -->
+<button class="scroll-top-fab" id="scrollTopBtn" aria-label="Scroll to top" onclick="window.scrollTo({top:0,behavior:'smooth'})">
+  <i class="fa-solid fa-arrow-up"></i>
+</button>
+
+<style>
+.scroll-top-fab {
+  position: fixed;
+  bottom: 96px;
+  right: 24px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: #0D47D8;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  box-shadow: 0 6px 20px rgba(13, 71, 216, 0.35);
+  z-index: 9000;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(12px);
+  transition: opacity 0.3s ease, visibility 0.3s ease, transform 0.3s ease, background 0.2s ease;
+}
+.scroll-top-fab.visible {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+.scroll-top-fab:hover {
+  background: #0A39A6;
+  transform: translateY(-3px);
+  box-shadow: 0 10px 28px rgba(13, 71, 216, 0.45);
+}
+.scroll-top-fab i {
+  pointer-events: none;
+}
+</style>
+
+<script>
+(function() {
+  var btn = document.getElementById('scrollTopBtn');
+  if (!btn) return;
+  window.addEventListener('scroll', function() {
+    if (window.scrollY > 300) {
+      btn.classList.add('visible');
+    } else {
+      btn.classList.remove('visible');
+    }
+  }, { passive: true });
+})();
+</script>
+</body>
+</html>

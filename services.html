@@ -1,0 +1,957 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book Free Study Abroad Counselling | ISMS Global Education</title>
+  <meta name="description" content="Get a free, no-obligation counselling session with our expert advisors to plan your study abroad journey — country, course &amp; university shortlisting.">
+  
+  <!-- Google Fonts -->
+  
+  
+  
+  
+  <!-- FontAwesome 6 CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="services.css">
+  <!-- ===== NAVBAR OVERRIDE: Exact match with index.html ===== -->
+  <style>
+  /* Navigation Bar Theme Overrides - EXACT MATCH WITH INDEX.HTML */
+  :root {
+    --header-bg: #F4F8FF;
+    --header-border: #DCE5F3;
+    --nav-text: #11172A;
+    --nav-hover-bg: #E5EDFF;
+    --nav-accent: #0D47D8;
+    --dropdown-bg: #FFFFFF;
+    --gold-btn: #C79A3C;
+    --gold-btn-hover: #B5872E;
+  }
+
+  .site-header {
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+    width: 100% !important;
+    z-index: 9999 !important;
+    background: var(--header-bg) !important;
+    border-bottom: 1px solid var(--header-border) !important;
+    box-shadow: 0 4px 20px rgba(17,23,42,0.08) !important;
+    backdrop-filter: none !important;
+  }
+
+  body {
+    padding-top: 96px !important;
+  }
+
+  .header-inner {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    height: 72px !important;
+    gap: 12px !important;
+    max-width: 1720px !important;
+    width: 95% !important;
+    margin: 0 auto !important;
+    padding: 0 2.5rem !important;
+  }
+
+  .brand-logo-img {
+    height: 48px !important;
+    width: auto !important;
+    max-width: 200px !important;
+    object-fit: contain !important;
+    display: block !important;
+  }
+
+  .main-nav {
+    display: flex !important;
+    align-items: center !important;
+    gap: 0 !important;
+    flex: 1 !important;
+    justify-content: center !important;
+    font-family: 'Inter', Arial, sans-serif !important;
+  }
+
+  .main-nav a {
+    color: var(--nav-text) !important;
+    font-size: 14.5px !important;
+    font-weight: 600 !important;
+    padding: 20px 16px !important;
+    border-bottom: 3px solid transparent !important;
+    transition: background .15s ease, border-color .15s ease !important;
+    opacity: 1 !important;
+    text-decoration: none !important;
+    white-space: nowrap !important;
+    display: flex !important;
+    align-items: center !important;
+  }
+  .main-nav a:hover, .main-nav a.active {
+    background: var(--nav-hover-bg) !important;
+    color: var(--nav-accent) !important;
+    border-bottom: 3px solid var(--nav-accent) !important;
+  }
+  .main-nav a.active::after {
+    display: none !important;
+  }
+
+  .nav-dropdown {
+    position: relative !important;
+  }
+  .nav-dropdown-toggle {
+    color: var(--nav-text) !important;
+    font-size: 14.5px !important;
+    font-weight: 600 !important;
+    padding: 20px 16px !important;
+    border-bottom: 3px solid transparent !important;
+    transition: background .15s ease, border-color .15s ease !important;
+    opacity: 1 !important;
+    background: transparent !important;
+    border-top: none !important;
+    border-left: none !important;
+    border-right: none !important;
+    cursor: pointer !important;
+    display: flex !important;
+    align-items: center !important;
+    gap: 5px !important;
+    white-space: nowrap !important;
+    font-family: 'Inter', Arial, sans-serif !important;
+  }
+  .nav-dropdown-toggle i {
+    color: var(--nav-accent) !important;
+    font-size: 10px !important;
+  }
+  .nav-dropdown:hover .nav-dropdown-toggle {
+    background: var(--nav-hover-bg) !important;
+    border-bottom: 3px solid var(--nav-accent) !important;
+    color: var(--nav-accent) !important;
+  }
+
+  .nav-dropdown-menu {
+    position: absolute !important;
+    top: 100% !important;
+    left: 0 !important;
+    background: var(--dropdown-bg) !important;
+    border: 1px solid var(--header-border) !important;
+    border-top: 3px solid var(--nav-accent) !important;
+    box-shadow: 0 14px 30px rgba(13, 71, 216, 0.08) !important;
+    border-radius: 14px !important;
+    padding: 8px !important;
+    opacity: 0 !important;
+    visibility: hidden !important;
+    transform: translateY(6px) !important;
+    transition: all 0.2s ease !important;
+    min-width: 160px !important;
+  }
+  .nav-dropdown:hover .nav-dropdown-menu {
+    opacity: 1 !important;
+    visibility: visible !important;
+    transform: translateY(4px) !important;
+  }
+  .nav-dropdown-menu a {
+    color: var(--nav-text) !important;
+    border-left: 3px solid transparent !important;
+    border-bottom: none !important;
+    border-top: none !important;
+    padding: 10px 22px !important;
+    font-size: 13.5px !important;
+    font-weight: 500 !important;
+    background: transparent !important;
+  }
+  .nav-dropdown-menu a:hover {
+    background: var(--header-bg) !important;
+    border-left: 3px solid var(--nav-accent) !important;
+    color: var(--nav-accent) !important;
+  }
+
+  .dest-mega-menu {
+    min-width: 680px !important;
+    padding: 16px 20px !important;
+    display: grid !important;
+    grid-template-columns: repeat(3, 1fr) !important;
+    gap: 8px 12px !important;
+    left: 50% !important;
+    transform: translateX(-50%) translateY(8px) !important;
+    border-radius: 18px !important;
+    background: var(--dropdown-bg) !important;
+    border-top: 3px solid var(--nav-accent) !important;
+  }
+  .nav-dropdown:hover .dest-mega-menu {
+    transform: translateX(-50%) translateY(4px) !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+  }
+
+  .dest-drop-item {
+    display: flex !important;
+    align-items: center !important;
+    gap: 12px !important;
+    padding: 10px 12px !important;
+    border-radius: 12px !important;
+    border-bottom: none !important;
+    border-top: none !important;
+    transition: background 0.15s ease !important;
+    text-decoration: none !important;
+    color: inherit !important;
+  }
+  .dest-drop-item:hover {
+    background: var(--header-bg) !important;
+    border-left: 3px solid var(--nav-accent) !important;
+  }
+  .dest-drop-flag {
+    width: 26px !important;
+    height: 18px !important;
+    object-fit: cover !important;
+    border-radius: 3px !important;
+    flex-shrink: 0 !important;
+  }
+  .dest-drop-text {
+    display: flex !important;
+    flex-direction: column !important;
+    line-height: 1.25 !important;
+  }
+  .dest-drop-text strong {
+    font-size: 13.5px !important;
+    font-weight: 700 !important;
+    color: var(--nav-text) !important;
+  }
+  .dest-drop-text span {
+    font-size: 11px !important;
+    color: #64748B !important;
+    margin-top: 2px !important;
+  }
+
+  .header-actions {
+    display: flex !important;
+    align-items: center !important;
+    gap: 8px !important;
+    flex-shrink: 0 !important;
+  }
+  .header-phone {
+    display: flex !important;
+    align-items: center !important;
+    gap: 10px !important;
+    color: var(--nav-text) !important;
+    text-decoration: none !important;
+    font-size: 12.5px !important;
+  }
+  .header-phone i {
+    width: 36px !important;
+    height: 36px !important;
+    border-radius: 50% !important;
+    background: var(--nav-hover-bg) !important;
+    color: var(--nav-accent) !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+  }
+  .header-phone small {
+    color: #667085 !important;
+  }
+  .header-phone strong {
+    color: var(--nav-text) !important;
+    font-weight: 700 !important;
+    font-size: 13.5px !important;
+  }
+
+  .site-header .btn-primary {
+    background: var(--gold-btn) !important;
+    color: #FFFFFF !important;
+    border: none !important;
+    font-weight: 700 !important;
+    box-shadow: none !important;
+    border-radius: 8px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+  }
+  .site-header .btn-primary:hover {
+    background: var(--gold-btn-hover) !important;
+    color: #FFFFFF !important;
+    transform: none !important;
+  }
+
+  .nav-toggle {
+    display: none !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    gap: 5px !important;
+    background: none !important;
+    border: none !important;
+    padding: 8px !important;
+    cursor: pointer !important;
+  }
+  .nav-toggle span {
+    width: 24px !important;
+    height: 2px !important;
+    background: var(--nav-text) !important;
+    border-radius: 2px !important;
+    transition: 0.3s ease !important;
+    display: block !important;
+  }
+
+  @media (max-width: 1160px) {
+    .nav-toggle { display: flex !important; }
+    .main-nav {
+      position: fixed !important;
+      inset: 72px 0 0 0 !important;
+      background: #fff !important;
+      flex-direction: column !important;
+      align-items: stretch !important;
+      padding: 24px !important;
+      gap: 4px !important;
+      overflow-y: auto !important;
+      transform: translateX(100%) !important;
+      transition: transform 0.3s ease !important;
+      box-shadow: 0 20px 40px rgba(0,0,0,0.1) !important;
+      z-index: 9998 !important;
+    }
+    .main-nav.open { transform: translateX(0) !important; }
+    .main-nav a, .nav-dropdown-toggle {
+      padding: 14px 8px !important;
+      border-bottom: 1px solid #E2E8F0 !important;
+      width: 100% !important;
+      font-size: 15px !important;
+      border-top: none !important;
+      border-left: none !important;
+      border-right: none !important;
+    }
+    .dest-mega-menu {
+      min-width: unset !important;
+      grid-template-columns: 1fr !important;
+      transform: none !important;
+      left: 0 !important;
+      position: static !important;
+      box-shadow: none !important;
+      border: none !important;
+    }
+    .nav-dropdown-menu {
+      position: static !important;
+      opacity: 1 !important;
+      visibility: visible !important;
+      transform: none !important;
+      display: none !important;
+    }
+    .nav-dropdown.open .nav-dropdown-menu { display: block !important; }
+  }
+  </style>
+</head>
+<body>
+
+  <!-- ==================== 1. SITE HEADER ==================== -->
+  <!-- ============ HEADER ============ -->
+<header class="site-header" id="siteHeader">
+  <div class="container header-inner">
+    <a href="index.html" class="logo">
+      <img src="assets/logo.png" alt="ISMS Global Education Logo" class="brand-logo-img">
+    </a>
+
+    <nav class="main-nav" id="mainNav">
+      <a href="index.html">Home</a>
+      <a href="about.html">About Us</a>
+      <div class="nav-dropdown">
+        <button class="nav-dropdown-toggle">Study Destinations <i class="fa-solid fa-chevron-down"></i></button>
+        <div class="nav-dropdown-menu dest-mega-menu">
+          <a href="uk-destination.html" class="dest-drop-item">
+            <img src="assets/flag_w40_gb.png" alt="UK Flag" class="dest-drop-flag">
+            <div class="dest-drop-text">
+              <strong>United Kingdom</strong>
+              <span>Top-ranked universities</span>
+            </div>
+          </a>
+          <a href="index.html#destinations" class="dest-drop-item">
+            <img src="assets/flag_w40_ie.png" alt="Ireland Flag" class="dest-drop-flag">
+            <div class="dest-drop-text">
+              <strong>Ireland</strong>
+              <span>EU residency gateway</span>
+            </div>
+          </a>
+          <a href="index.html#destinations" class="dest-drop-item">
+            <img src="assets/flag_w40_au.png" alt="Australia Flag" class="dest-drop-flag">
+            <div class="dest-drop-text">
+              <strong>Australia</strong>
+              <span>World-class education</span>
+            </div>
+          </a>
+          <a href="index.html#destinations" class="dest-drop-item">
+            <img src="assets/flag_w40_us.png" alt="USA Flag" class="dest-drop-flag">
+            <div class="dest-drop-text">
+              <strong>USA</strong>
+              <span>Leading research institutions</span>
+            </div>
+          </a>
+          <a href="index.html#destinations" class="dest-drop-item">
+            <img src="assets/flag_w40_nz.png" alt="New Zealand Flag" class="dest-drop-flag">
+            <div class="dest-drop-text">
+              <strong>New Zealand</strong>
+              <span>Safe, scenic, welcoming</span>
+            </div>
+          </a>
+          <a href="dubai-destination.html" class="dest-drop-item">
+            <img src="assets/flag_w40_ae.png" alt="Dubai Flag" class="dest-drop-flag">
+            <div class="dest-drop-text">
+              <strong>Dubai</strong>
+              <span>Global business hub</span>
+            </div>
+          </a>
+          <a href="index.html#destinations" class="dest-drop-item">
+            <img src="assets/flag_w40_fr.png" alt="France Flag" class="dest-drop-flag">
+            <div class="dest-drop-text">
+              <strong>France</strong>
+              <span>Art, culture &amp; innovation</span>
+            </div>
+          </a>
+          <a href="index.html#destinations" class="dest-drop-item">
+            <img src="assets/flag_w40_de.png" alt="Germany Flag" class="dest-drop-flag">
+            <div class="dest-drop-text">
+              <strong>Germany</strong>
+              <span>Engineering excellence</span>
+            </div>
+          </a>
+          <a href="index.html#destinations" class="dest-drop-item">
+            <img src="assets/flag_w40_nl.png" alt="Netherlands Flag" class="dest-drop-flag">
+            <div class="dest-drop-text">
+              <strong>Netherlands</strong>
+              <span>English-taught programmes</span>
+            </div>
+          </a>
+          <a href="index.html#destinations" class="dest-drop-item">
+            <img src="assets/flag_w40_es.png" alt="Spain Flag" class="dest-drop-flag">
+            <div class="dest-drop-text">
+              <strong>Spain</strong>
+              <span>Vibrant student culture</span>
+            </div>
+          </a>
+        </div>
+      </div>
+      <a href="universities.html">Universities</a>
+      <a href="courses.html">Courses</a>
+      <a href="services.html">Services</a>
+      <a href="Scholarship.html">Scholarships</a>
+      <a href="Blog.html">Blog</a>
+      <a href="contact.html">Contact Us</a>
+    </nav>
+
+    <div class="header-actions">
+      <a href="tel:+919561776600" class="header-phone">
+        <i class="fa-solid fa-phone"></i>
+        <span><strong>Call Now</strong></span>
+      </a>
+      <a href="index.html#contact" class="btn btn-primary btn-sm" style="font-size:12px; padding: 0 14px; height: 36px;">Get FREE Counselling</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+  <!-- MAIN CONTENT WRAPPER -->
+  <main>
+
+    <!-- ==================== 2. HERO SECTION ==================== -->
+    <section class="svc-hero-section">
+      <div class="svc-hero-landmarks-bg">
+        <img src="assets/Scene_Sketch.png" alt="World Landmarks Background" class="svc-scene-sketch-img">
+      </div>
+      
+      <!-- Vector Plane -->
+      <img src="assets/plane.png" class="svc-vector-plane" alt="Airplane Vector">
+
+      <div class="container">
+        <div class="svc-hero-inner">
+          <div class="svc-hero-content">
+            <nav class="svc-breadcrumb">
+              <a href="index.html">Home</a> &gt;
+              <span style="color: var(--svc-navy); font-weight: 600;">Services</span>
+            </nav>
+
+            <h1 class="svc-hero-title">
+              Our Services
+              <span class="blue-text">Book Your Free Study Abroad Counselling Session</span>
+            </h1>
+
+            <p class="svc-hero-sub">
+              ISMS Global Education is a study abroad consultancy that has been providing Indian students assistance to get admission to some of the best universities in the UK for over 16 years and more. ISMS Global Education provides guidance to students throughout their process from consultation until they settle down in their new cities.
+            </p>
+
+            <div class="svc-hero-stats-row">
+              <div class="svc-stat-pill"><i class="fa-solid fa-graduation-cap"></i> 15+ Years Experience</div>
+              <div class="svc-stat-pill"><i class="fa-solid fa-building-columns"></i> 500+ University Partners</div>
+              <div class="svc-stat-pill"><i class="fa-solid fa-passport"></i> 98%+ Visa Success Rate</div>
+              <div class="svc-stat-pill"><i class="fa-solid fa-users"></i> 10,000+ Students Guided</div>
+            </div>
+          </div>
+
+          <div class="svc-hero-image-wrapper">
+            <img src="assets/Girl.png" alt="Smiling Student Girl" class="svc-hero-student-img">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== 3. PROCESS STEPPER BAR ==================== -->
+    <section class="svc-process-section">
+      <div class="container">
+        <div class="svc-process-header">
+          <h2>End-to-End Support for Your Study Abroad Journey</h2>
+          <p>We simplify every step so you can focus on your dreams.</p>
+        </div>
+
+        <!-- Stepper Horizontal Row -->
+        <div class="svc-stepper-bar">
+          <a href="#step-01" class="svc-step-item active">
+            <span class="num">01</span> Free Counselling
+          </a>
+          <a href="#step-02" class="svc-step-item">
+            <span class="num">02</span> Application Assistance
+          </a>
+          <a href="#step-03" class="svc-step-item">
+            <span class="num">03</span> Scholarship Guidance
+          </a>
+          <a href="#step-04" class="svc-step-item">
+            <span class="num">04</span> Education Loan
+          </a>
+          <a href="#step-05" class="svc-step-item">
+            <span class="num">05</span> Visa &amp; Docs
+          </a>
+          <a href="#step-06" class="svc-step-item">
+            <span class="num">06</span> Pre-Departure
+          </a>
+          <a href="#step-07" class="svc-step-item">
+            <span class="num">07</span> Post-Arrival
+          </a>
+        </div>
+
+        <!-- ==================== 4. 7 DETAILED SERVICE STEP CARDS ==================== -->
+        <div class="svc-steps-wrapper">
+
+          <!-- SERVICE 01: 100% FREE COUNSELLING -->
+          <div class="svc-step-card" id="step-01">
+            <div class="svc-card-content">
+              <div class="svc-step-num-badge">01</div>
+              <h3>100% Free Counselling</h3>
+              <p class="desc">
+                There is nothing like paying for the guidance you are provided when you haven't even selected a course yet. ISMS Global Education provides a 100% free counselling service to assist students in shortlisting the universities, courses and countries according to their educational background and budget as well as their career objective.
+              </p>
+
+              <div class="svc-checklist-grid">
+                <div class="svc-check-item"><i class="fa-solid fa-circle-check"></i> 100% Free &amp; No-Obligation Consultation</div>
+                <div class="svc-check-item"><i class="fa-solid fa-circle-check"></i> Personalized Country &amp; University Shortlisting</div>
+                <div class="svc-check-item"><i class="fa-solid fa-circle-check"></i> Course Selection Matched to Budget &amp; Goals</div>
+                <div class="svc-check-item"><i class="fa-solid fa-circle-check"></i> One-on-One Expert Counselling Sessions</div>
+              </div>
+
+              <a href="contact.html" class="btn-svc-action">Book Free Counselling <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+
+            <div class="svc-card-media">
+              <img src="assets/img_photo-1541829070764-84a7d30dd3f3.jpg" alt="Free Counselling Session" class="bg-photo">
+              
+              <div class="svc-floating-overlay-card">
+                <h4>100% Free Guidance</h4>
+                <div class="svc-overlay-list">
+                  <div class="svc-overlay-item"><i class="fa-solid fa-id-card"></i> Profile Evaluation</div>
+                  <div class="svc-overlay-item"><i class="fa-solid fa-graduation-cap"></i> Course Shortlisting</div>
+                  <div class="svc-overlay-item"><i class="fa-solid fa-building-columns"></i> University Matching</div>
+                  <div class="svc-overlay-item"><i class="fa-solid fa-calculator"></i> Budget Planning</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- SERVICE 02: APPLICATION ASSISTANCE FOR UNIVERSITY ADMISSIONS -->
+          <div class="svc-step-card reverse" id="step-02">
+            <div class="svc-card-content">
+              <div class="svc-step-num-badge">02</div>
+              <h3>Application Assistance for University Admissions</h3>
+              <p class="desc">
+                The admission process to the universities of the UK is much more than just filling out a form. ISMS Global Education will help students make a good application by helping them select the appropriate course and universities as well as help them prepare their SOP, LORs, and other academic documents.
+              </p>
+
+              <div class="svc-checklist-grid">
+                <div class="svc-check-item"><i class="fa-solid fa-circle-check"></i> Appropriate course &amp; university selection</div>
+                <div class="svc-check-item"><i class="fa-solid fa-circle-check"></i> Statement of Purpose (SOP) drafting guidance</div>
+                <div class="svc-check-item"><i class="fa-solid fa-circle-check"></i> Letters of Recommendation (LOR) preparation</div>
+                <div class="svc-check-item"><i class="fa-solid fa-circle-check"></i> Complete academic document verification</div>
+              </div>
+
+              <a href="contact.html" class="btn-svc-action">Apply Now <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+
+            <div class="svc-card-media">
+              <img src="assets/img_photo-1517694712202-14dd9538aa97.jpg" alt="University Application Guidance" class="bg-photo">
+
+              <div class="svc-floating-overlay-card">
+                <h4>Application Made Easy</h4>
+                <div class="svc-overlay-list">
+                  <div class="svc-overlay-item"><i class="fa-solid fa-file-invoice"></i> Documentation Check</div>
+                  <div class="svc-overlay-item"><i class="fa-solid fa-paper-plane"></i> Application Support</div>
+                  <div class="svc-overlay-item"><i class="fa-solid fa-pen-nib"></i> SOP &amp; LOR Guidance</div>
+                  <div class="svc-overlay-item"><i class="fa-regular fa-clock"></i> Timely Submission</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- SERVICE 03: SCHOLARSHIP GUIDANCE -->
+          <div class="svc-step-card gold-theme" id="step-03">
+            <div class="svc-card-content">
+              <div class="svc-step-num-badge gold">03</div>
+              <h3>Scholarship Guidance</h3>
+              <p class="desc">
+                Studying abroad is a huge investment, and scholarships can make all the difference. ISMS Global Education helps students recognize and apply for scholarships they qualify for based on academic merit, choice of course and university-specific funding options – helping to make your UK education a more affordable proposition.
+              </p>
+
+              <div class="svc-checklist-grid">
+                <div class="svc-check-item"><i class="fa-solid fa-circle-check"></i> Academic merit scholarship identification</div>
+                <div class="svc-check-item"><i class="fa-solid fa-circle-check"></i> University-specific funding applications</div>
+                <div class="svc-check-item"><i class="fa-solid fa-circle-check"></i> Course-specific grant opportunities</div>
+                <div class="svc-check-item"><i class="fa-solid fa-circle-check"></i> Tuition fee discount assistance</div>
+              </div>
+
+              <a href="Scholarship.html" class="btn-svc-action gold">Explore Scholarships <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+
+            <div class="svc-card-media">
+              <img src="assets/img_photo-1551288049-bebda4e38f71.jpg" alt="Scholarship Guidance" class="bg-photo">
+
+              <div class="svc-floating-overlay-card">
+                <h4>Affordable Education</h4>
+                <div class="svc-overlay-list">
+                  <div class="svc-overlay-item"><i class="fa-solid fa-award"></i> Merit Scholarships</div>
+                  <div class="svc-overlay-item"><i class="fa-solid fa-building-columns"></i> University Grants</div>
+                  <div class="svc-overlay-item"><i class="fa-solid fa-coins"></i> Fee Discounts</div>
+                  <div class="svc-overlay-item"><i class="fa-solid fa-file-signature"></i> Application Support</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- SERVICE 04: EDUCATION LOAN ASSISTANCE -->
+          <div class="svc-step-card reverse" id="step-04">
+            <div class="svc-card-content">
+              <div class="svc-step-num-badge">04</div>
+              <h3>Education Loan Assistance</h3>
+              <p class="desc">
+                Funding for education should not be a barrier. ISMS Global Education helps students with the education loan process by connecting them with lenders and getting the right documentation done to ensure funding for the tuition and living expenses.
+              </p>
+
+              <div class="svc-checklist-grid">
+                <div class="svc-check-item"><i class="fa-solid fa-circle-check"></i> Direct connection with approved bank lenders</div>
+                <div class="svc-check-item"><i class="fa-solid fa-circle-check"></i> Complete loan documentation support</div>
+                <div class="svc-check-item"><i class="fa-solid fa-circle-check"></i> Funding coverage for tuition &amp; living expenses</div>
+                <div class="svc-check-item"><i class="fa-solid fa-circle-check"></i> Competitive interest rates &amp; fast approvals</div>
+              </div>
+
+              <a href="contact.html" class="btn-svc-action">Get Loan Support <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+
+            <div class="svc-card-media">
+              <img src="assets/img_photo-1589829545856-d10d557cf95f.jpg" alt="Education Loan Assistance" class="bg-photo">
+
+              <div class="svc-floating-overlay-card">
+                <h4>Funding Your Future</h4>
+                <div class="svc-overlay-list">
+                  <div class="svc-overlay-item"><i class="fa-solid fa-landmark"></i> Bank Connections</div>
+                  <div class="svc-overlay-item"><i class="fa-solid fa-file-contract"></i> Easy Documentation</div>
+                  <div class="svc-overlay-item"><i class="fa-solid fa-money-check-dollar"></i> Tuition &amp; Living Coverage</div>
+                  <div class="svc-overlay-item"><i class="fa-solid fa-bolt"></i> Fast Sanction</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- SERVICE 05: VISA AND DOCUMENTATION SUPPORT (GREEN THEME) -->
+          <div class="svc-step-card green-theme" id="step-05">
+            <div class="svc-card-content">
+              <div class="svc-step-num-badge green">05</div>
+              <h3>Visa and Documentation Support</h3>
+              <p class="desc">
+                The basis for studying abroad is the visa application – your small errors in your visa documents can often lead to a painful denial of approval. We help you manage, organize and validate your paperwork through our comprehensive Visa &amp; Documentation guidance to make sure there is least room for errors. With a 100% visa success rate, ISMS Global Education ensures that students’ applications are taken care of from document verification to the final submission.
+              </p>
+
+              <div class="svc-checklist-grid">
+                <div class="svc-check-item"><i class="fa-solid fa-circle-check"></i> Paperwork management, organization &amp; validation</div>
+                <div class="svc-check-item"><i class="fa-solid fa-circle-check"></i> Thorough document verification to eliminate errors</div>
+                <div class="svc-check-item"><i class="fa-solid fa-circle-check"></i> Complete guidance up to final visa submission</div>
+                <div class="svc-check-item"><i class="fa-solid fa-circle-check"></i> 100% reported visa success rate track record</div>
+              </div>
+
+              <p class="text-xs" style="color: #64748B; font-style: italic; margin-bottom: 16px;">
+                Note: "100% visa success rate" reflects ISMS Global Education's own reported track record.
+              </p>
+
+              <a href="contact.html" class="btn-svc-action green">Visa Support <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+
+            <div class="svc-card-media">
+              <img src="assets/img_photo-1506973035872-a4ec16b8e8d9.jpg" alt="Visa and Documentation Support" class="bg-photo">
+
+              <div class="svc-floating-overlay-card">
+                <h4>100% Visa Success Track Record</h4>
+                <div class="svc-overlay-list">
+                  <div class="svc-overlay-item"><i class="fa-solid fa-passport"></i> Document Validation</div>
+                  <div class="svc-overlay-item"><i class="fa-solid fa-shield-halved"></i> Error-Free Filing</div>
+                  <div class="svc-overlay-item"><i class="fa-solid fa-comments"></i> Interview Prep</div>
+                  <div class="svc-overlay-item"><i class="fa-solid fa-circle-check"></i> Final Submission</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- SERVICE 06: PRE-DEPARTURE BRIEFING -->
+          <div class="svc-step-card reverse" id="step-06">
+            <div class="svc-card-content">
+              <div class="svc-step-num-badge">06</div>
+              <h3>Pre-Departure Briefing</h3>
+              <p class="desc">
+                Sometimes it is overwhelming to move to a completely different atmosphere. Our pre-departure briefs are designed to prepare the student for the expected transition from packing and visa preparation to opening accounts and understanding culture and accommodation options for one’s new home abroad.
+              </p>
+
+              <div class="svc-checklist-grid">
+                <div class="svc-check-item"><i class="fa-solid fa-circle-check"></i> Packing &amp; travel preparation checklists</div>
+                <div class="svc-check-item"><i class="fa-solid fa-circle-check"></i> Bank account opening &amp; currency guidance</div>
+                <div class="svc-check-item"><i class="fa-solid fa-circle-check"></i> Cultural adaptation &amp; lifestyle insights</div>
+                <div class="svc-check-item"><i class="fa-solid fa-circle-check"></i> Accommodation booking &amp; orientation</div>
+              </div>
+
+              <a href="contact.html" class="btn-svc-action">Pre-Departure Guidance <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+
+            <div class="svc-card-media">
+              <img src="assets/img_photo-1454165804606-c3d57bc86b40.jpg" alt="Pre-Departure Briefing" class="bg-photo">
+
+              <div class="svc-floating-overlay-card">
+                <h4>Smooth Transition</h4>
+                <div class="svc-overlay-list">
+                  <div class="svc-overlay-item"><i class="fa-solid fa-suitcase"></i> Packing Checklist</div>
+                  <div class="svc-overlay-item"><i class="fa-solid fa-piggy-bank"></i> Bank Account Info</div>
+                  <div class="svc-overlay-item"><i class="fa-solid fa-earth-americas"></i> Culture Adaptation</div>
+                  <div class="svc-overlay-item"><i class="fa-solid fa-house"></i> Housing Setup</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- SERVICE 07: POST-ARRIVAL ASSISTANCE -->
+          <div class="svc-step-card" id="step-07">
+            <div class="svc-card-content">
+              <div class="svc-step-num-badge">07</div>
+              <h3>Post-Arrival Assistance</h3>
+              <p class="desc">
+                We are committed to a student’s education journey abroad even after they have landed and reached their destination. We help with accommodation and miscellaneous concerns as the student goes through the first weeks. Our forte is the visa success rate over 17+ years, an outcome of our dedicated and meticulous documentation and timely processing.
+              </p>
+
+              <div class="svc-checklist-grid">
+                <div class="svc-check-item"><i class="fa-solid fa-circle-check"></i> Airport pickup &amp; local transit support</div>
+                <div class="svc-check-item"><i class="fa-solid fa-circle-check"></i> Housing check-in &amp; accommodation setup</div>
+                <div class="svc-check-item"><i class="fa-solid fa-circle-check"></i> First-week settling-in &amp; emergency help</div>
+                <div class="svc-check-item"><i class="fa-solid fa-circle-check"></i> Ongoing student support throughout studies</div>
+              </div>
+
+              <a href="contact.html" class="btn-svc-action">Get Support <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+
+            <div class="svc-card-media">
+              <img src="assets/img_photo-1523240795612-9a054b0db644.jpg" alt="Post-Arrival Assistance" class="bg-photo">
+
+              <div class="svc-floating-overlay-card">
+                <h4>17+ Years Forte</h4>
+                <div class="svc-overlay-list">
+                  <div class="svc-overlay-item"><i class="fa-solid fa-plane-arrival"></i> Airport Pickup</div>
+                  <div class="svc-overlay-item"><i class="fa-solid fa-house-chimney"></i> Housing Support</div>
+                  <div class="svc-overlay-item"><i class="fa-solid fa-headset"></i> First-Week Support</div>
+                  <div class="svc-overlay-item"><i class="fa-solid fa-heart text-blue"></i> Lifetime Guidance</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== 5. CONSULTATION BANNER ==================== -->
+    <div class="container">
+      <section class="svc-consultation-banner">
+        <div class="svc-banner-inner">
+          <img src="assets/Boy.png" alt="Smiling Student Counsellor" class="svc-cta-left-student">
+          
+          <div class="svc-cta-center">
+            <h2>Ready to Start Your Study Abroad Journey?</h2>
+            <p>Book a free one-to-one counselling session with our experts today and take the first step towards your global future.</p>
+          </div>
+
+          <div class="svc-cta-actions">
+            <button type="button" class="btn-cta-white">
+              <i class="fa-solid fa-book-bookmark"></i> Book Free Counselling
+            </button>
+            <button type="button" class="btn-cta-outline">
+              <i class="fa-solid fa-headset"></i> Talk to an Expert
+            </button>
+            <a href="https://wa.me/919561776600" target="_blank" class="btn-cta-whatsapp">
+              <i class="fa-brands fa-whatsapp"></i> WhatsApp Us
+            </a>
+          </div>
+        </div>
+      </section>
+    </div>
+
+  </main>
+
+  <!-- ==================== 6. SITE FOOTER ==================== -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="logo logo-footer"><img src="assets/logo.png" alt="ISMS Global Education Logo" class="brand-logo-img footer-logo-img"></a>
+        <p>ISMS Global is your trusted partner for studying abroad. We provide end-to-end support for admissions, visas, scholarships and a successful international education journey.</p>
+        <ul class="footer-highlights">
+          <li><i class="fa-solid fa-earth-americas"></i><div><strong>Global Expertise</strong><span>Years of experience in international education and student success.</span></div></li>
+          <li><i class="fa-solid fa-user-group"></i><div><strong>Student First</strong><span>Personalized guidance and support at every step of your journey.</span></div></li>
+          <li><i class="fa-solid fa-shield-halved"></i><div><strong>Integrity &amp; Trust</strong><span>Transparent processes and honest advice you can rely on.</span></div></li>
+        </ul>
+      </div>
+
+      <div class="footer-col"><h5>Quick Links</h5>
+        <ul><li><a href="index.html">Home</a></li><li><a href="about.html">About Us</a></li><li><a href="services.html">Our Services</a></li><li><a href="study-abroad-counselling.html">Study Abroad Counselling</a></li><li><a href="index.html#destinations">Study Destinations</a></li><li><a href="universities.html">Universities</a></li><li><a href="courses.html">Courses</a></li><li><a href="Scholarship.html">Scholarships</a></li><li><a href="index.html#blog">Blogs &amp; Resources</a></li><li><a href="contact.html">Contact Us</a></li><li><a href="sitemap.html">Sitemap</a></li></ul>
+      </div>
+
+      <div class="footer-col"><h5>Study Destinations</h5>
+        <ul>
+          <li><a href="index.html#destinations"><img src="assets/flag_w40_ca.png" class="flag-icon" alt="Canada Flag"> Canada</a></li>
+          <li><a href="index.html#destinations"><img src="assets/flag_w40_us.png" class="flag-icon" alt="USA Flag"> USA</a></li>
+          <li><a href="index.html#destinations"><img src="assets/flag_w40_gb.png" class="flag-icon" alt="UK Flag"> UK</a></li>
+          <li><a href="index.html#destinations"><img src="assets/flag_w40_au.png" class="flag-icon" alt="Australia Flag"> Australia</a></li>
+          <li><a href="index.html#destinations"><img src="assets/flag_w40_de.png" class="flag-icon" alt="Germany Flag"> Germany</a></li>
+          <li><a href="index.html#destinations"><img src="assets/flag_w40_ie.png" class="flag-icon" alt="Ireland Flag"> Ireland</a></li>
+          <li><a href="dubai-destination.html"><img src="assets/flag_w40_ae.png" class="flag-icon" alt="Dubai Flag"> Dubai</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col"><h5>Popular Courses</h5>
+        <ul><li><a href="courses.html">Business &amp; Management</a></li><li><a href="courses.html">Engineering</a></li><li><a href="courses.html">Information Technology</a></li><li><a href="courses.html">Health &amp; Medicine</a></li><li><a href="courses.html">Data Science &amp; AI</a></li><li><a href="courses.html">Law</a></li></ul>
+      </div>
+
+      <div class="footer-col"><h5>Our Services</h5>
+        <ul><li><a href="services.html#step-01">Course Selection</a></li><li><a href="services.html#step-02">Application Steps</a></li><li><a href="services.html#step-03">After Offer Letter</a></li><li><a href="services.html#step-04">Scholarships &amp; Loans</a></li><li><a href="services.html#step-05">Visa Preparation</a></li><li><a href="study-abroad-counselling.html">Study Abroad Counselling</a></li></ul>
+      </div>
+
+      <div class="footer-col footer-newsletter"><h5>Newsletter</h5>
+        <p>Stay updated with the latest study abroad news, scholarships, events and useful resources.</p>
+        <form class="newsletter-form" onsubmit="return false;">
+          <input type="email" placeholder="Enter your email address" required>
+          <button type="submit" aria-label="Subscribe"><i class="fa-solid fa-paper-plane"></i></button>
+        </form>
+        <h6>Follow Us</h6>
+        <div class="social-row">
+          <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+          <a href="#" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="container footer-offices">
+      <div class="offices-col"><h5>Our Offices</h5>
+        <div class="office"><i class="fa-solid fa-location-dot"></i><div><strong>India &ndash; Head Office</strong><span>ISMS Global Education Pvt. Ltd. Baner, Pune, Maharashtra 411045, India</span><small>info@ismsglobal.com | +91 95 61 77 66 00</small></div></div>
+        <div class="office"><i class="fa-solid fa-location-dot"></i><div><strong>Canada Office</strong><span>100 Consilium Place, Suite 200, Scarborough, ON M1H 3E3, Canada</span><small>canada@ismsglobal.com | +1 437 774 5006</small></div></div>
+        <div class="office"><i class="fa-solid fa-location-dot"></i><div><strong>UK Office</strong><span>85 Great Portland Street, London, W1W 7LT, United Kingdom</span><small>uk@ismsglobal.com | +44 20 3868 0743</small></div></div>
+      </div>
+      <div class="offices-col"><h5>Accreditations &amp; Partnerships</h5>
+        <div class="accred-grid">
+          <div class="accred-badge"><i class="fa-solid fa-circle-nodes"></i>ICEF<small>Connect. Recruit. Grow.</small></div>
+          <div class="accred-badge"><i class="fa-regular fa-circle"></i>British Council<small>Certified Agent</small></div>
+          <div class="accred-badge"><i class="fa-solid fa-award"></i>QEAC Australia<small>Qualified Education Agent Counsellor</small></div>
+          <div class="accred-badge"><i class="fa-solid fa-a"></i>AAERI<small>Member</small></div>
+        </div>
+      </div>
+      <div class="offices-col"><h5>Why Choose ISMS Global?</h5>
+        <div class="mini-stat-grid">
+          <div><strong data-counter="20000">20,000+</strong><span>Students Guided</span></div>
+          <div><strong>500+</strong><span>Partner Universities</span></div>
+          <div><strong>30+</strong><span>Countries</span></div>
+          <div><strong>15+</strong><span>Years of Excellence</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <span>&copy; <span id="year">2026</span> ISMS Global Education Pvt. Ltd. All Rights Reserved.</span>
+      <nav>
+        <a href="privacy-policy.html">Privacy Policy</a>
+        <a href="privacy-policy.html#terms">Terms &amp; Conditions</a>
+        <a href="privacy-policy.html#refund">Refund Policy</a>
+        <a href="sitemap.html">Sitemap</a>
+      </nav>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="script.js"></script>
+  <script src="services.js"></script>
+
+<!-- ===== SCROLL TO TOP BUTTON ===== -->
+<button class="scroll-top-fab" id="scrollTopBtn" aria-label="Scroll to top" onclick="window.scrollTo({top:0,behavior:'smooth'})">
+  <i class="fa-solid fa-arrow-up"></i>
+</button>
+
+<style>
+.scroll-top-fab {
+  position: fixed;
+  bottom: 96px;
+  right: 24px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: #0D47D8;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  box-shadow: 0 6px 20px rgba(13, 71, 216, 0.35);
+  z-index: 9000;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(12px);
+  transition: opacity 0.3s ease, visibility 0.3s ease, transform 0.3s ease, background 0.2s ease;
+}
+.scroll-top-fab.visible {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+.scroll-top-fab:hover {
+  background: #0A39A6;
+  transform: translateY(-3px);
+  box-shadow: 0 10px 28px rgba(13, 71, 216, 0.45);
+}
+.scroll-top-fab i {
+  pointer-events: none;
+}
+</style>
+
+<script>
+(function() {
+  var btn = document.getElementById('scrollTopBtn');
+  if (!btn) return;
+  window.addEventListener('scroll', function() {
+    if (window.scrollY > 300) {
+      btn.classList.add('visible');
+    } else {
+      btn.classList.remove('visible');
+    }
+  }, { passive: true });
+})();
+</script>
+</body>
+</html>
