@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
@@ -473,7 +473,7 @@
       <a href="#hero" class="active">Home</a>
       <a href="about.html">About Us</a>
       <div class="nav-dropdown">
-        <button class="nav-dropdown-toggle">Study Destinations <i class="fa-solid fa-chevron-down"></i></button>
+        <a href="index.html#destinations" class="nav-dropdown-toggle">Study Destinations <i class="fa-solid fa-chevron-down"></i></a>
         <div class="nav-dropdown-menu dest-mega-menu">
           <a href="uk-destination.html" class="dest-drop-item">
             <img src="assets/flag_w40_gb.png" alt="UK Flag" class="dest-drop-flag">
@@ -547,9 +547,99 @@
           </a>
         </div>
       </div>
-      <a href="universities.html">Universities</a>
-      <a href="courses.html">Courses</a>
-      <a href="services.html">Services</a>
+      <div class="nav-dropdown">
+        <a href="universities.html" class="nav-dropdown-toggle">Universities <i class="fa-solid fa-chevron-down"></i></a>
+        <div class="nav-dropdown-menu uni-drop-menu">
+          <a href="universities.html" class="uni-drop-item">
+            <i class="fa-solid fa-globe uni-drop-icon"></i>
+            <div class="uni-drop-text"><strong>Browse by Country</strong><span>Find universities by destination</span></div>
+          </a>
+          <a href="universities.html?filter=ranking" class="uni-drop-item">
+            <i class="fa-solid fa-ranking-star uni-drop-icon"></i>
+            <div class="uni-drop-text"><strong>Browse by Ranking</strong><span>Top QS &amp; World ranked universities</span></div>
+          </a>
+          <a href="universities.html?filter=course" class="uni-drop-item">
+            <i class="fa-solid fa-book-open uni-drop-icon"></i>
+            <div class="uni-drop-text"><strong>Browse by Course</strong><span>Find universities by your subject</span></div>
+          </a>
+          <a href="universities.html?filter=top25" class="uni-drop-item">
+            <i class="fa-solid fa-award uni-drop-icon"></i>
+            <div class="uni-drop-text"><strong>Top 25 Universities</strong><span>World's best institutions</span></div>
+          </a>
+          <div class="uni-drop-divider"></div>
+          <a href="universities.html" class="uni-drop-viewall">View All Universities <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </div>
+      <div class="nav-dropdown">
+        <a href="courses.html" class="nav-dropdown-toggle">Courses <i class="fa-solid fa-chevron-down"></i></a>
+        <div class="nav-dropdown-menu course-drop-menu">
+          <a href="courses.html?cat=business" class="course-drop-item">
+            <i class="fa-solid fa-briefcase course-drop-icon"></i>
+            <div class="course-drop-text"><strong>Business &amp; Management</strong><span>(MBA, MSc Finance)</span></div>
+          </a>
+          <a href="courses.html?cat=cs" class="course-drop-item">
+            <i class="fa-solid fa-laptop-code course-drop-icon"></i>
+            <div class="course-drop-text"><strong>Computer Science &amp; Data</strong><span>(AI, Data Science)</span></div>
+          </a>
+          <a href="courses.html?cat=health" class="course-drop-item">
+            <i class="fa-solid fa-notes-medical course-drop-icon"></i>
+            <div class="course-drop-text"><strong>Health &amp; Public Health</strong><span>Medical &amp; Healthcare</span></div>
+          </a>
+          <a href="courses.html?cat=engineering" class="course-drop-item">
+            <i class="fa-solid fa-gear course-drop-icon"></i>
+            <div class="course-drop-text"><strong>Engineering</strong><span>Robotics &amp; Technology</span></div>
+          </a>
+          <a href="courses.html?cat=supplychain" class="course-drop-item">
+            <i class="fa-solid fa-truck-ramp-box course-drop-icon"></i>
+            <div class="course-drop-text"><strong>Supply Chain &amp; Logistics</strong><span>Global Trade &amp; Operations</span></div>
+          </a>
+          <a href="courses.html?cat=law" class="course-drop-item">
+            <i class="fa-solid fa-scale-balanced course-drop-icon"></i>
+            <div class="course-drop-text"><strong>Law</strong><span>Corporate &amp; Int'l Law</span></div>
+          </a>
+          <a href="courses.html?cat=arts" class="course-drop-item">
+            <i class="fa-solid fa-palette course-drop-icon"></i>
+            <div class="course-drop-text"><strong>Arts, Media &amp; Design</strong><span>Media, Design &amp; Film</span></div>
+          </a>
+          <div class="course-drop-divider"></div>
+          <a href="courses.html" class="course-drop-viewall">View All Courses <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </div>
+      <div class="nav-dropdown">
+        <a href="services.html" class="nav-dropdown-toggle">Services <i class="fa-solid fa-chevron-down"></i></a>
+        <div class="nav-dropdown-menu service-drop-menu">
+          <a href="services.html#step-01" class="service-drop-item">
+            <i class="fa-solid fa-comments service-drop-icon"></i>
+            <div class="service-drop-text"><strong>Free Counselling</strong><span>Expert 1-on-1 guidance</span></div>
+          </a>
+          <a href="services.html#step-02" class="service-drop-item">
+            <i class="fa-solid fa-file-signature service-drop-icon"></i>
+            <div class="service-drop-text"><strong>Application Assistance</strong><span>End-to-end university filing</span></div>
+          </a>
+          <a href="services.html#step-03" class="service-drop-item">
+            <i class="fa-solid fa-hand-holding-dollar service-drop-icon"></i>
+            <div class="service-drop-text"><strong>Scholarship Guidance</strong><span>Financial aid &amp; grants</span></div>
+          </a>
+          <a href="services.html#step-04" class="service-drop-item">
+            <i class="fa-solid fa-piggy-bank service-drop-icon"></i>
+            <div class="service-drop-text"><strong>Education Loan Assistance</strong><span>Low interest student loans</span></div>
+          </a>
+          <a href="services.html#step-05" class="service-drop-item">
+            <i class="fa-solid fa-passport service-drop-icon"></i>
+            <div class="service-drop-text"><strong>Visa &amp; Documentation</strong><span>High success visa filing</span></div>
+          </a>
+          <a href="services.html#step-06" class="service-drop-item">
+            <i class="fa-solid fa-plane-departure service-drop-icon"></i>
+            <div class="service-drop-text"><strong>Pre-Departure Briefing</strong><span>Travel &amp; checklist guidance</span></div>
+          </a>
+          <a href="services.html#step-07" class="service-drop-item">
+            <i class="fa-solid fa-house-user service-drop-icon"></i>
+            <div class="service-drop-text"><strong>Post-Arrival Support</strong><span>Housing &amp; local setup</span></div>
+          </a>
+          <div class="service-drop-divider"></div>
+          <a href="services.html" class="service-drop-viewall">View All Services <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </div>
       <a href="Scholarship.html">Scholarships</a>
       <!-- <a href="services.html#step-05">Visa Guidance</a> -->
       <a href="Blog.html">Blog</a>
@@ -1291,9 +1381,13 @@
 
 <!-- ============ 8. STUDENT SUPPORT ============ -->
 <section class="section section-tint support-section" id="support">
+  <!-- Left Blending Hero Image -->
+  <div class="support-left-hero-blend">
+    <img src="assets/Gemini_Generated_Image_8b481l8b481l8b48.png" alt="Student ready at airport" class="support-left-blend-img">
+    <div class="support-left-blend-gradient"></div>
+  </div>
   <div class="support-bg-wrapper">
-    <img src="assets/big-ben-sketch.png" class="support-sketch support-sketch-left" alt="Big Ben Sketch Backdrop">
-    <img src="assets/statue-of-liberty-sketch.png" class="support-sketch support-sketch-right" alt="Statue of Liberty Sketch Backdrop">
+    <img src="assets/Scene_Sketch.png" class="support-scene-sketch-right" alt="World Landmarks Scene Sketch">
     
     <svg class="support-flight-svg" viewBox="0 0 1200 220" fill="none" xmlns="http://www.w3.org/2000/svg">
       <path d="M 40 160 Q 600 -30 1160 160" stroke="#2563EB" stroke-width="2" stroke-dasharray="6 6" opacity="0.32"/>
@@ -1305,19 +1399,15 @@
 
   <div class="container relative-z">
     <div class="support-header-wrapper" data-reveal>
-      <div class="support-header-left">
-        <img src="assets/girl.png" alt="Student ready for study abroad journey" class="support-girl-img">
-      </div>
+      <div class="support-header-left"></div>
 
       <div class="support-header-center">
         <span class="eyebrow eyebrow-line"><i class="fa-solid fa-graduation-cap"></i> BEYOND ADMISSION</span>
-        <h2>Complete Support <span class="text-primary">Before, During</span> &amp; <span class="text-primary">After Your Arrival</span></h2>
+        <h2>Complete Support <span class="text-primary">Before, During</span> &amp; <span style="color: #11172A;">After Your Arrival</span></h2>
         <p class="section-sub">We are with you at every step of your study abroad journey and beyond.</p>
       </div>
 
-      <div class="support-header-right">
-        <img src="assets/big-ben-sketch.png" alt="Global skyline sketch" class="support-skyline-img">
-      </div>
+      <div class="support-header-right"></div>
     </div>
 
     <div class="grid grid-3 support-cards-grid" data-reveal-group>
@@ -1325,7 +1415,7 @@
       <article class="support-card" data-reveal>
         <div class="support-card-info">
           <div class="support-card-head-title">
-            <div class="support-icon-wrap"><i class="fa-solid fa-list-check"></i></div>
+            <div class="support-icon-wrap"><img src="assets/Screenshot 2026-08-04 142630.png" alt="Before You Leave Icon" class="support-icon-img"></div>
             <h4>Before You Leave</h4>
           </div>
           <ul>
@@ -1346,7 +1436,7 @@
       <article class="support-card" data-reveal>
         <div class="support-card-info">
           <div class="support-card-head-title">
-            <div class="support-icon-wrap"><i class="fa-solid fa-plane-arrival"></i></div>
+            <div class="support-icon-wrap"><img src="assets/ChatGPT Image Aug 5, 2026, 09_26_55 PM.png" alt="During Your Stay Icon" class="support-icon-img"></div>
             <h4>During Your Stay</h4>
           </div>
           <ul>
@@ -1367,7 +1457,7 @@
       <article class="support-card" data-reveal>
         <div class="support-card-info">
           <div class="support-card-head-title">
-            <div class="support-icon-wrap"><i class="fa-solid fa-graduation-cap"></i></div>
+            <div class="support-icon-wrap"><img src="assets/Screenshot 2026-08-04 142543.png" alt="After Your Arrival Icon" class="support-icon-img"></div>
             <h4>After Your Arrival</h4>
           </div>
           <ul>
@@ -1384,12 +1474,100 @@
         </div>
       </article>
     </div>
+
+    <!-- WHY STUDENTS TRUST ISMS GLOBAL EDUCATION BLOCK -->
+    <div class="why-trust-card-block" data-reveal>
+      <div class="why-trust-header">
+        <h3>Why Students Trust <span class="text-blue-accent">ISMS Global Education</span> for End-to-End Support</h3>
+        <div class="blue-underline"></div>
+      </div>
+
+      <div class="why-trust-grid">
+        <!-- Item 1: Personalized Attention -->
+        <div class="why-trust-item">
+          <img src="assets/ChatGPT Image Aug 5, 2026, 09_44_27 PM.png" alt="Personalized Attention" class="why-trust-badge-img">
+          <h4>Personalized Attention</h4>
+          <p>Every student gets dedicated support tailored to their goals and profile.</p>
+        </div>
+
+        <!-- Item 2: Expert Counsellors -->
+        <div class="why-trust-item">
+          <img src="assets/Screenshot 2026-08-05 213956.png" alt="Expert Counsellors" class="why-trust-badge-img">
+          <h4>Expert Counsellors</h4>
+          <p>Experienced professionals with in-depth knowledge of global education.</p>
+        </div>
+
+        <!-- Item 3: Strong University Relationships -->
+        <div class="why-trust-item">
+          <img src="assets/Screenshot 2026-08-05 214003.png" alt="Strong University Relationships" class="why-trust-badge-img">
+          <h4>Strong University Relationships</h4>
+          <p>Direct partnerships with 500+ top universities worldwide.</p>
+        </div>
+
+        <!-- Item 4: 100% Visa Assistance -->
+        <div class="why-trust-item">
+          <img src="assets/Screenshot 2026-08-05 214009.png" alt="100% Visa Assistance" class="why-trust-badge-img">
+          <h4>100% Visa Assistance</h4>
+          <p>Expert guidance for smooth visa processing and higher success rate.</p>
+        </div>
+
+        <!-- Item 5: Scholarships & Financial Aid -->
+        <div class="why-trust-item">
+          <img src="assets/Screenshot 2026-08-05 214015.png" alt="Scholarships & Financial Aid" class="why-trust-badge-img">
+          <h4>Scholarships &amp; Financial Aid</h4>
+          <p>Access to multiple scholarships and funding options to reduce costs.</p>
+        </div>
+
+        <!-- Item 6: Support Beyond Boundaries -->
+        <div class="why-trust-item">
+          <img src="assets/Screenshot 2026-08-05 214021.png" alt="Support Beyond Boundaries" class="why-trust-badge-img">
+          <h4>Support Beyond Boundaries</h4>
+          <p>We stay with you even after you reach your destination.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- YOU DREAM IT. WE MAKE IT HAPPEN BANNER -->
+    <div class="support-dream-banner" data-reveal>
+      <div class="dream-banner-left">
+        <div class="dream-banner-icon-wrap">
+          <img src="assets/Graduate_cap.png" alt="Graduate Cap and Globe" class="dream-banner-cap-img">
+        </div>
+        <div class="dream-banner-text">
+          <h2>You Dream It. We Make It Happen.</h2>
+          <p>From your first counselling to your successful career overseas, we are with you &ndash; every step of the way.</p>
+        </div>
+      </div>
+
+      <div class="dream-banner-center">
+        <a href="#contact" class="btn btn-dream-cta">Get FREE Counselling <i class="fa-solid fa-arrow-right"></i></a>
+      </div>
+
+      <div class="dream-banner-right">
+        <div class="dream-avatar-group">
+          <img src="assets/img_photo-1494790108377-be9c29b29330.jpg" alt="Guided Student 1" class="dream-avatar">
+          <img src="assets/img_photo-1507003211169-0a1dd7228f2d.jpg" alt="Guided Student 2" class="dream-avatar">
+          <img src="assets/img_photo-1534528741775-53994a69daeb.jpg" alt="Guided Student 3" class="dream-avatar">
+        </div>
+        <div class="dream-stats-text">
+          <strong>10,000+</strong>
+          <span>Students Guided Successfully</span>
+        </div>
+      </div>
+    </div>
   </div>
 </section>
 
 <!-- ============ 9. OUR 6-STEP PROCESS (EXACT MATCH REFERENCE DESIGN) ============ -->
 <section class="section process-exact-section" id="process">
+  <!-- Leftmost Landmarks Cutout Image -->
+  <img src="assets/Gemini_Generated_Image_jrv3gejrv3gejrv3-removebg-preview.png" alt="World Landmarks Left Cutout" class="process-left-sketch-img">
+
+  <!-- Rightmost Landmarks Image -->
+  <img src="assets/Gemini_Generated_Image_bpfa0lbpfa0lbpfa.png" alt="World Landmarks Right Cutout" class="process-right-sketch-img">
+
   <div class="process-bg-wrapper">
+    <img src="assets/Globe.png" alt="World Map Globe Background" class="process-globe-bg">
     <svg class="process-flight-svg" viewBox="0 0 1200 220" fill="none" xmlns="http://www.w3.org/2000/svg">
       <path d="M 40 160 Q 600 -30 1160 160" stroke="#2563EB" stroke-width="2" stroke-dasharray="6 6" opacity="0.32"/>
       <g class="process-plane">
@@ -1399,15 +1577,12 @@
   </div>
 
   <div class="container relative-z">
-    <!-- Header with Eyebrow, Title & Right Girl Student Image -->
+    <!-- Header with Eyebrow, Title & Subtitle Centered -->
     <div class="process-exact-header" data-reveal>
-      <div class="process-header-text" style="text-align: left;">
+      <div class="process-header-text">
         <span class="process-eyebrow"><i class="fa-solid fa-graduation-cap"></i> OUR 6 STEP PROCESS</span>
-        <h2 style="font-size: 38px; font-weight: 800; color: #11172A; margin: 12px 0; text-align: left; line-height: 1.25;">How Does <span class="text-blue">ISMS Global Education</span> Help You <span class="text-blue">Study Abroad?</span></h2>
-        <p class="section-sub" style="text-align: left; max-width: 680px; margin: 0; font-size: 15px; color: #667085;">We make your study abroad journey simple, smooth, and successful with our proven 6-step process.</p>
-      </div>
-      <div class="process-header-media">
-        <img src="assets/girl.png" alt="Student holding passport ready to study abroad" class="process-girl-img">
+        <h2>How Does <span class="text-blue">ISMS Global Education</span> Help You <span class="text-blue">Study Abroad?</span></h2>
+        <p class="section-sub">We make your study abroad journey simple, smooth, and successful with our proven 6-step process.</p>
       </div>
     </div>
 
@@ -1416,37 +1591,37 @@
       <!-- Stepper Connecting Icons Line -->
       <div class="process-stepper-row">
         <div class="stepper-node color-green">
-          <div class="stepper-icon"><i class="fa-solid fa-comments"></i></div>
+          <div class="stepper-icon"><img src="assets/Screenshot 2026-08-05 213956.png" alt="Step 01 Icon" class="stepper-icon-img"></div>
           <span class="stepper-badge">01</span>
         </div>
         <div class="stepper-line"><i class="fa-solid fa-chevron-right"></i></div>
 
         <div class="stepper-node color-blue">
-          <div class="stepper-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+          <div class="stepper-icon"><img src="assets/Screenshot 2026-08-04 142543.png" alt="Step 02 Icon" class="stepper-icon-img"></div>
           <span class="stepper-badge">02</span>
         </div>
         <div class="stepper-line"><i class="fa-solid fa-chevron-right"></i></div>
 
         <div class="stepper-node color-purple">
-          <div class="stepper-icon"><i class="fa-solid fa-file-signature"></i></div>
+          <div class="stepper-icon"><img src="assets/Screenshot 2026-08-04 142630.png" alt="Step 03 Icon" class="stepper-icon-img"></div>
           <span class="stepper-badge">03</span>
         </div>
         <div class="stepper-line"><i class="fa-solid fa-chevron-right"></i></div>
 
         <div class="stepper-node color-orange">
-          <div class="stepper-icon"><i class="fa-solid fa-envelope-open-text"></i></div>
+          <div class="stepper-icon"><img src="assets/Screenshot 2026-08-05 222943.png" alt="Step 04 Icon" class="stepper-icon-img"></div>
           <span class="stepper-badge">04</span>
         </div>
         <div class="stepper-line"><i class="fa-solid fa-chevron-right"></i></div>
 
         <div class="stepper-node color-teal">
-          <div class="stepper-icon"><i class="fa-solid fa-passport"></i></div>
+          <div class="stepper-icon"><img src="assets/Screenshot 2026-08-05 222948.png" alt="Step 05 Icon" class="stepper-icon-img"></div>
           <span class="stepper-badge">05</span>
         </div>
         <div class="stepper-line"><i class="fa-solid fa-chevron-right"></i></div>
 
         <div class="stepper-node color-pink">
-          <div class="stepper-icon"><i class="fa-solid fa-plane-departure"></i></div>
+          <div class="stepper-icon"><img src="assets/Screenshot 2026-08-05 222953.png" alt="Step 06 Icon" class="stepper-icon-img"></div>
           <span class="stepper-badge">06</span>
         </div>
       </div>
@@ -1536,45 +1711,74 @@
     <!-- Middle Trust Bar ("One Goal. Your Global Success.") -->
     <div class="process-trust-bar" data-reveal>
       <div class="process-trust-main">
-        <div class="p-trust-icon"><i class="fa-solid fa-trophy"></i></div>
+        <div class="p-trust-icon-badge">
+          <img src="assets/Screenshot 2026-08-05 223325.png" alt="Trophy Icon">
+        </div>
         <div>
           <strong>One Goal. Your Global Success.</strong>
           <span>From counselling to career, we are with you every step of the way.</span>
         </div>
       </div>
       <div class="process-trust-stats">
-        <div><i class="fa-solid fa-user-group"></i><div><strong>17+</strong><span>Glorious Years</span></div></div>
-        <div><i class="fa-solid fa-graduation-cap"></i><div><strong>10,000+</strong><span>Students Guided</span></div></div>
-        <div><i class="fa-solid fa-globe"></i><div><strong>10+</strong><span>Top Study Destinations</span></div></div>
-        <div><i class="fa-solid fa-building-columns"></i><div><strong>500+</strong><span>University Partners</span></div></div>
-        <div><i class="fa-solid fa-shield-check"></i><div><strong>100%</strong><span>Visa Success Rate</span></div></div>
+        <div class="p-stat-item">
+          <div class="p-stat-icon-circle"><img src="assets/Screenshot 2026-08-04 151316.png" alt="Glorious Years" class="p-stat-img-icon"></div>
+          <div class="p-stat-info"><strong>17+</strong><span>Glorious Years</span></div>
+        </div>
+        <div class="p-stat-item">
+          <div class="p-stat-icon-circle"><img src="assets/Screenshot 2026-08-04 142543.png" alt="Students Guided" class="p-stat-img-icon"></div>
+          <div class="p-stat-info"><strong>10,000+</strong><span>Students Guided</span></div>
+        </div>
+        <div class="p-stat-item">
+          <div class="p-stat-icon-circle"><img src="assets/Screenshot 2026-08-04 142552.png" alt="Top Study Destinations" class="p-stat-img-icon"></div>
+          <div class="p-stat-info"><strong>10+</strong><span>Top Study Destinations</span></div>
+        </div>
+        <div class="p-stat-item">
+          <div class="p-stat-icon-circle"><img src="assets/Screenshot 2026-08-04 142607.png" alt="University Partners" class="p-stat-img-icon"></div>
+          <div class="p-stat-info"><strong>500+</strong><span>University Partners</span></div>
+        </div>
+        <div class="p-stat-item">
+          <div class="p-stat-icon-circle"><img src="assets/Screenshot 2026-08-04 142635.png" alt="Visa Success Rate" class="p-stat-img-icon"></div>
+          <div class="p-stat-info"><strong>100%</strong><span>Visa Success Rate</span></div>
+        </div>
       </div>
     </div>
 
+    <!-- Bottom Process CTA Banner ("Your Dream. Our Process. Your Success.") -->
+    <div class="process-bottom-cta-banner" data-reveal>
+      <div class="process-cta-left">
+        <img src="assets/plane.png" class="process-cta-plane-img" alt="Paper Plane Graphic">
+        <div class="process-cta-text">
+          <h2>Your Dream. Our Process. Your Success.</h2>
+          <p>Let ISMS Global Education turn your study abroad dream into reality.</p>
+        </div>
+      </div>
 
-  </div>
-</section>
-    <h3 class="subsection-title" data-reveal>Why Students Trust ISMS Global Education for End-to-End Support</h3>
-    <div class="grid grid-6" data-reveal-group>
-      <div class="icon-stat" data-reveal><i class="fa-solid fa-headset"></i><strong>Personalized Attention</strong><span>Every student gets dedicated support tailored to their goals and profile.</span></div>
-      <div class="icon-stat" data-reveal><i class="fa-solid fa-user-group"></i><strong>Expert Counsellors</strong><span>Experienced professionals with in-depth knowledge of global education.</span></div>
-      <div class="icon-stat" data-reveal><i class="fa-solid fa-handshake"></i><strong>Strong University Relationships</strong><span>Direct partnerships with 500+ top universities worldwide.</span></div>
-      <div class="icon-stat" data-reveal><i class="fa-solid fa-shield-halved"></i><strong>Visa Assistance</strong><span>Expert guidance for smooth visa processing and higher success rate.</span></div>
-      <div class="icon-stat" data-reveal><i class="fa-solid fa-sack-dollar"></i><strong>Scholarships &amp; Financial Aid</strong><span>Access to multiple scholarships and funding options to reduce costs.</span></div>
-      <div class="icon-stat" data-reveal><i class="fa-solid fa-heart"></i><strong>Support Beyond Boundaries</strong><span>We stay with you even after you reach your destination.</span></div>
+      <div class="process-cta-center">
+        <a href="#contact" class="btn-process-cta">Get FREE Counselling <i class="fa-solid fa-arrow-right"></i></a>
+      </div>
+
+      <div class="process-cta-right">
+        <div class="process-cta-avatars">
+          <img src="assets/img_photo-1494790108377-be9c29b29330.jpg" alt="Student 1" class="process-cta-avatar">
+          <img src="assets/img_photo-1507003211169-0a1dd7228f2d.jpg" alt="Student 2" class="process-cta-avatar">
+          <img src="assets/img_photo-1534528741775-53994a69daeb.jpg" alt="Student 3" class="process-cta-avatar">
+        </div>
+        <div class="process-cta-stats-info">
+          <strong>10,000+</strong>
+          <span>Students Guided Successfully</span>
+        </div>
+      </div>
     </div>
-
-
   </div>
 </section>
 
 <!-- ============ 10. TESTIMONIALS ============ -->
 <section class="section section-tint testimonials-section" id="testimonials">
+  <!-- Left & Right Title Corner Globe Images -->
+  <img src="assets/Globe.png" class="testimonials-title-globe-left" alt="Globe Left Backdrop">
+  <img src="assets/Globe.png" class="testimonials-title-globe-right" alt="Globe Right Backdrop">
+
   <div class="testimonials-bg-wrapper">
-    <img src="assets/Globe.png" class="testimonials-globe-bg" alt="World Map Dotted Globe Backdrop">
-    <img src="assets/big-ben-sketch.png" class="test-sketch test-sketch-left" alt="Big Ben Sketch Backdrop">
-    <img src="assets/statue-of-liberty-sketch.png" class="test-sketch test-sketch-right" alt="Statue of Liberty Sketch Backdrop">
-    
     <svg class="test-flight-svg" viewBox="0 0 1200 220" fill="none" xmlns="http://www.w3.org/2000/svg">
       <path d="M 40 160 Q 600 -30 1160 160" stroke="#2563EB" stroke-width="2" stroke-dasharray="6 6" opacity="0.32"/>
       <g class="test-plane">
@@ -1607,11 +1811,11 @@
     </div>
 
     <div class="stat-bar" data-reveal>
-      <div class="stat"><i class="fa-solid fa-graduation-cap"></i><strong data-counter="10000">0</strong><span>Students Guided from 50+ Countries</span></div>
-      <div class="stat"><i class="fa-solid fa-building-columns"></i><strong>500+</strong><span>University Partners Worldwide</span></div>
-      <div class="stat"><i class="fa-solid fa-earth-americas"></i><strong>10+</strong><span>Top Study Destinations</span></div>
-      <div class="stat"><i class="fa-solid fa-medal"></i><strong>17+</strong><span>Years of Excellence</span></div>
-      <div class="stat"><i class="fa-solid fa-circle-check"></i><strong>High</strong><span>Visa Success Rate</span></div>
+      <div class="stat"><img src="assets/Screenshot 2026-08-04 142543.png" class="stat-icon-img" alt="Students Guided"><strong data-counter="10000">0</strong><span>Students Guided from 50+ Countries</span></div>
+      <div class="stat"><img src="assets/Screenshot 2026-08-04 142607.png" class="stat-icon-img" alt="University Partners"><strong>500+</strong><span>University Partners Worldwide</span></div>
+      <div class="stat"><img src="assets/Screenshot 2026-08-04 142552.png" class="stat-icon-img" alt="Top Study Destinations"><strong>10+</strong><span>Top Study Destinations</span></div>
+      <div class="stat"><img src="assets/Screenshot 2026-08-04 142534.png" class="stat-icon-img" alt="Years of Excellence"><strong>17+</strong><span>Years of Excellence</span></div>
+      <div class="stat"><img src="assets/Screenshot 2026-08-04 142635.png" class="stat-icon-img" alt="Visa Success Rate"><strong>100%</strong><span>Visa Success Rate</span></div>
     </div>
 
 
@@ -1640,20 +1844,103 @@
     </div>
 
     <div class="events-layout" data-reveal>
-      <div class="featured-event">
-        <span class="event-tag">Featured Event</span>
-        <span class="event-live"><i class="fa-solid fa-circle"></i> Live Webinar</span>
-        <img src="assets/img_photo-1524178232363-1fb2b075b655.jpg" alt="Study in Canada information session banner">
-        <h4>Study in Canada Information Session 2026</h4>
-        <p>Everything you need to know about universities, admissions, scholarships &amp; PR pathways.</p>
-        <div class="event-meta"><span><i class="fa-regular fa-calendar"></i> 24 May 2026, Saturday</span><span><i class="fa-regular fa-clock"></i> 11:00 AM &ndash; 12:30 PM (IST)</span><span><i class="fa-solid fa-location-dot"></i> Online (Zoom)</span></div>
-        <div class="event-host"><img src="assets/img_photo-1472099645785-5658abf4ff4e.jpg" alt="Mr. Arjun Mehta"><span>Mr. Arjun Mehta<br><small>Country Head &ndash; Canada</small></span><a href="#contact" class="btn btn-white">Register Now <i class="fa-solid fa-arrow-right"></i></a></div>
+      <!-- Featured Event (Exact Match Reference Design) -->
+      <div class="featured-event-exact">
+        <div class="featured-event-ribbon">FEATURED EVENT</div>
+        
+        <div class="featured-event-grid">
+          <!-- Left Media: Student with CN Tower Backdrop -->
+          <div class="featured-event-left">
+            <img src="assets/canada.png" alt="Student with Toronto CN Tower Backdrop" class="featured-event-student-img">
+          </div>
+
+          <!-- Right Details -->
+          <div class="featured-event-right">
+            <div class="featured-event-head">
+              <span class="event-live-pill"><i class="fa-solid fa-circle text-red"></i> LIVE WEBINAR</span>
+            </div>
+
+            <h3 class="featured-event-title">Study in Canada Information Session 2026</h3>
+            <p class="featured-event-desc">Everything you need to know about universities, admissions, scholarships &amp; PR pathways.</p>
+
+            <div class="featured-event-divider"></div>
+
+            <div class="featured-event-meta">
+              <div class="meta-item"><i class="fa-regular fa-calendar-check"></i> <span>24 May 2026, Saturday</span></div>
+              <div class="meta-item"><i class="fa-regular fa-clock"></i> <span>11:00 AM &ndash; 12:30 PM (IST)</span></div>
+              <div class="meta-item"><i class="fa-solid fa-location-dot"></i> <span>Online (Zoom)</span></div>
+            </div>
+
+            <div class="featured-event-footer">
+              <div class="event-host-info">
+                <img src="assets/img_photo-1472099645785-5658abf4ff4e.jpg" alt="Mr. Arjun Mehta" class="host-avatar">
+                <div>
+                  <strong>Mr. Arjun Mehta</strong>
+                  <span>Country Head &ndash; Canada</span>
+                  <small>ISMS Global Education</small>
+                </div>
+              </div>
+
+              <a href="#contact" class="btn-event-register">Register Now <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
       </div>
 
       <div class="event-grid" id="eventGrid"></div>
     </div>
 
     <div class="text-center" data-reveal><a href="#" class="btn btn-secondary"><i class="fa-regular fa-calendar"></i> View All Events <i class="fa-solid fa-arrow-right"></i></a></div>
+
+    <!-- Bottom CTA Meet Our Experts Banner -->
+    <div class="events-meet-banner" data-reveal>
+      <!-- Left Info -->
+      <div class="events-meet-left">
+        <div class="events-meet-icon-badge">
+          <i class="fa-solid fa-users-rectangle"></i>
+        </div>
+        <div class="events-meet-text">
+          <h3>Don't Miss Your Chance to Meet Our Experts.</h3>
+          <p>Get personalized guidance, clear your doubts and take the right step towards your dream university.</p>
+        </div>
+      </div>
+
+      <!-- Middle 4 Features -->
+      <div class="events-meet-features">
+        <div class="events-feat-item">
+          <i class="fa-solid fa-user-gear"></i>
+          <span>Expert<br>Sessions</span>
+        </div>
+        <div class="events-feat-item">
+          <i class="fa-solid fa-comments"></i>
+          <span>Live Q&amp;A</span>
+        </div>
+        <div class="events-feat-item">
+          <i class="fa-regular fa-newspaper"></i>
+          <span>Latest<br>Updates</span>
+        </div>
+        <div class="events-feat-item">
+          <i class="fa-solid fa-globe"></i>
+          <span>Global<br>Opportunities</span>
+        </div>
+      </div>
+
+      <!-- Right Action & Team Avatars -->
+      <div class="events-meet-right">
+        <a href="#contact" class="btn-events-cta">Get FREE Counselling <i class="fa-solid fa-arrow-right"></i></a>
+
+        <div class="events-team-wrap">
+          <div class="events-team-avatars">
+            <img src="assets/img_photo-1507003211169-0a1dd7228f2d.jpg" alt="Counsellor 1" class="events-team-avatar">
+            <img src="assets/img_photo-1500648767791-00dcc994a43e.jpg" alt="Counsellor 2" class="events-team-avatar">
+            <img src="assets/img_photo-1494790108377-be9c29b29330.jpg" alt="Counsellor 3" class="events-team-avatar">
+          </div>
+          <div class="events-team-text">
+            Our team is ready<br>to guide you!
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </section>
 
@@ -1781,25 +2068,38 @@
 
     <!-- Bottom Dark Blue Trust Banner -->
     <div class="faq-trust-banner" data-reveal>
-      <div class="faq-trust-left">
-        <div class="f-globe-icon"><i class="fa-solid fa-earth-americas"></i></div>
-        <div>
-          <strong>Your Dream. Our Guidance. Your Future.</strong>
-          <span>Thousands of students have transformed their dreams into reality with ISMS Global. You can be next!</span>
+      <div class="faq-trust-left-content">
+        <div class="faq-trust-header-row">
+          <div class="f-globe-icon"><i class="fa-solid fa-earth-americas"></i></div>
+          <div class="faq-trust-text">
+            <h3>Your Dream. Our Guidance. Your Future.</h3>
+            <p>Thousands of students have transformed their dreams into reality with ISMS Global. You can be next!</p>
+          </div>
         </div>
+        <a href="#contact" class="btn-trust-journey">Start Your Journey Today <i class="fa-solid fa-arrow-right"></i></a>
       </div>
 
       <div class="faq-trust-stats">
-        <div><i class="fa-solid fa-user-group"></i><div><strong>20,000+</strong><span>Students Guided</span></div></div>
+        <div class="faq-stat-box">
+          <i class="fa-solid fa-user-group"></i>
+          <div><strong>20,000+</strong><span>Students Guided</span></div>
+        </div>
         <div class="v-divider"></div>
-        <div><i class="fa-solid fa-building-columns"></i><div><strong>500+</strong><span>Partner Universities</span></div></div>
+        <div class="faq-stat-box">
+          <i class="fa-solid fa-building-columns"></i>
+          <div><strong>500+</strong><span>Partner Universities</span></div>
+        </div>
         <div class="v-divider"></div>
-        <div><i class="fa-solid fa-globe"></i><div><strong>30+</strong><span>Countries</span></div></div>
+        <div class="faq-stat-box">
+          <i class="fa-solid fa-globe"></i>
+          <div><strong>30+</strong><span>Countries</span></div>
+        </div>
         <div class="v-divider"></div>
-        <div><i class="fa-solid fa-award"></i><div><strong>15+</strong><span>Years of Excellence</span></div></div>
+        <div class="faq-stat-box">
+          <i class="fa-solid fa-award"></i>
+          <div><strong>15+</strong><span>Years of Excellence</span></div>
+        </div>
       </div>
-
-      <a href="#contact" class="btn btn-white">Start Your Journey Today <i class="fa-solid fa-arrow-right"></i></a>
     </div>
   </div>
 </section>
@@ -1962,7 +2262,63 @@
     </div>
 
     <div class="footer-col"><h5>Quick Links</h5>
-      <ul><li><a href="about.html">About Us</a></li><li><a href="services.html">Our Services</a></li><li><a href="study-abroad-counselling.html">Study Abroad Counselling</a></li><li><a href="#destinations">Study Destinations</a></li><li><a href="universities.html">Universities</a></li><li><a href="courses.html">Courses</a></li><li><a href="Scholarship.html">Scholarships</a></li><li><a href="Blog.html">Blogs &amp; Resources</a></li><li><a href="contact.html">Contact Us</a></li><li><a href="sitemap.html">Sitemap</a></li></ul>
+      <ul><li><a href="about.html">About Us</a></li><li><a href="services.html">Our Services</a></li><li><a href="study-abroad-counselling.html">Study Abroad Counselling</a></li><li><a href="#destinations">Study Destinations</a></li><li><div class="nav-dropdown">
+        <a href="universities.html" class="nav-dropdown-toggle">Universities <i class="fa-solid fa-chevron-down"></i></a>
+        <div class="nav-dropdown-menu uni-drop-menu">
+          <a href="universities.html" class="uni-drop-item">
+            <i class="fa-solid fa-globe uni-drop-icon"></i>
+            <div class="uni-drop-text"><strong>Browse by Country</strong><span>Find universities by destination</span></div>
+          </a>
+          <a href="universities.html?filter=ranking" class="uni-drop-item">
+            <i class="fa-solid fa-ranking-star uni-drop-icon"></i>
+            <div class="uni-drop-text"><strong>Browse by Ranking</strong><span>Top QS &amp; World ranked universities</span></div>
+          </a>
+          <a href="universities.html?filter=course" class="uni-drop-item">
+            <i class="fa-solid fa-book-open uni-drop-icon"></i>
+            <div class="uni-drop-text"><strong>Browse by Course</strong><span>Find universities by your subject</span></div>
+          </a>
+          <a href="universities.html?filter=top25" class="uni-drop-item">
+            <i class="fa-solid fa-award uni-drop-icon"></i>
+            <div class="uni-drop-text"><strong>Top 25 Universities</strong><span>World's best institutions</span></div>
+          </a>
+          <div class="uni-drop-divider"></div>
+          <a href="universities.html" class="uni-drop-viewall">View All Universities <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </div></li><li><div class="nav-dropdown">
+        <a href="courses.html" class="nav-dropdown-toggle">Courses <i class="fa-solid fa-chevron-down"></i></a>
+        <div class="nav-dropdown-menu course-drop-menu">
+          <a href="courses.html?cat=business" class="course-drop-item">
+            <i class="fa-solid fa-briefcase course-drop-icon"></i>
+            <div class="course-drop-text"><strong>Business &amp; Management</strong><span>(MBA, MSc Finance)</span></div>
+          </a>
+          <a href="courses.html?cat=cs" class="course-drop-item">
+            <i class="fa-solid fa-laptop-code course-drop-icon"></i>
+            <div class="course-drop-text"><strong>Computer Science &amp; Data</strong><span>(AI, Data Science)</span></div>
+          </a>
+          <a href="courses.html?cat=health" class="course-drop-item">
+            <i class="fa-solid fa-notes-medical course-drop-icon"></i>
+            <div class="course-drop-text"><strong>Health &amp; Public Health</strong><span>Medical &amp; Healthcare</span></div>
+          </a>
+          <a href="courses.html?cat=engineering" class="course-drop-item">
+            <i class="fa-solid fa-gear course-drop-icon"></i>
+            <div class="course-drop-text"><strong>Engineering</strong><span>Robotics &amp; Technology</span></div>
+          </a>
+          <a href="courses.html?cat=supplychain" class="course-drop-item">
+            <i class="fa-solid fa-truck-ramp-box course-drop-icon"></i>
+            <div class="course-drop-text"><strong>Supply Chain &amp; Logistics</strong><span>Global Trade &amp; Operations</span></div>
+          </a>
+          <a href="courses.html?cat=law" class="course-drop-item">
+            <i class="fa-solid fa-scale-balanced course-drop-icon"></i>
+            <div class="course-drop-text"><strong>Law</strong><span>Corporate &amp; Int'l Law</span></div>
+          </a>
+          <a href="courses.html?cat=arts" class="course-drop-item">
+            <i class="fa-solid fa-palette course-drop-icon"></i>
+            <div class="course-drop-text"><strong>Arts, Media &amp; Design</strong><span>Media, Design &amp; Film</span></div>
+          </a>
+          <div class="course-drop-divider"></div>
+          <a href="courses.html" class="course-drop-viewall">View All Courses <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </div></li><li><a href="Scholarship.html">Scholarships</a></li><li><a href="Blog.html">Blogs &amp; Resources</a></li><li><a href="contact.html">Contact Us</a></li><li><a href="sitemap.html">Sitemap</a></li></ul>
     </div>
 
     <div class="footer-col"><h5>Study Destinations</h5>

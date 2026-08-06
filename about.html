@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
@@ -40,7 +40,7 @@
   }
 
   body {
-    padding-top: 96px !important;
+    padding-top: 72px !important;
   }
 
   .header-inner {
@@ -350,7 +350,7 @@
       <a href="index.html">Home</a>
       <a href="about.html">About Us</a>
       <div class="nav-dropdown">
-        <button class="nav-dropdown-toggle">Study Destinations <i class="fa-solid fa-chevron-down"></i></button>
+        <a href="index.html#destinations" class="nav-dropdown-toggle">Study Destinations <i class="fa-solid fa-chevron-down"></i></a>
         <div class="nav-dropdown-menu dest-mega-menu">
           <a href="uk-destination.html" class="dest-drop-item">
             <img src="assets/flag_w40_gb.png" alt="UK Flag" class="dest-drop-flag">
@@ -424,9 +424,99 @@
           </a>
         </div>
       </div>
-      <a href="universities.html">Universities</a>
-      <a href="courses.html">Courses</a>
-      <a href="services.html">Services</a>
+      <div class="nav-dropdown">
+        <a href="universities.html" class="nav-dropdown-toggle">Universities <i class="fa-solid fa-chevron-down"></i></a>
+        <div class="nav-dropdown-menu uni-drop-menu">
+          <a href="universities.html" class="uni-drop-item">
+            <i class="fa-solid fa-globe uni-drop-icon"></i>
+            <div class="uni-drop-text"><strong>Browse by Country</strong><span>Find universities by destination</span></div>
+          </a>
+          <a href="universities.html?filter=ranking" class="uni-drop-item">
+            <i class="fa-solid fa-ranking-star uni-drop-icon"></i>
+            <div class="uni-drop-text"><strong>Browse by Ranking</strong><span>Top QS &amp; World ranked universities</span></div>
+          </a>
+          <a href="universities.html?filter=course" class="uni-drop-item">
+            <i class="fa-solid fa-book-open uni-drop-icon"></i>
+            <div class="uni-drop-text"><strong>Browse by Course</strong><span>Find universities by your subject</span></div>
+          </a>
+          <a href="universities.html?filter=top25" class="uni-drop-item">
+            <i class="fa-solid fa-award uni-drop-icon"></i>
+            <div class="uni-drop-text"><strong>Top 25 Universities</strong><span>World's best institutions</span></div>
+          </a>
+          <div class="uni-drop-divider"></div>
+          <a href="universities.html" class="uni-drop-viewall">View All Universities <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </div>
+      <div class="nav-dropdown">
+        <a href="courses.html" class="nav-dropdown-toggle">Courses <i class="fa-solid fa-chevron-down"></i></a>
+        <div class="nav-dropdown-menu course-drop-menu">
+          <a href="courses.html?cat=business" class="course-drop-item">
+            <i class="fa-solid fa-briefcase course-drop-icon"></i>
+            <div class="course-drop-text"><strong>Business &amp; Management</strong><span>(MBA, MSc Finance)</span></div>
+          </a>
+          <a href="courses.html?cat=cs" class="course-drop-item">
+            <i class="fa-solid fa-laptop-code course-drop-icon"></i>
+            <div class="course-drop-text"><strong>Computer Science &amp; Data</strong><span>(AI, Data Science)</span></div>
+          </a>
+          <a href="courses.html?cat=health" class="course-drop-item">
+            <i class="fa-solid fa-notes-medical course-drop-icon"></i>
+            <div class="course-drop-text"><strong>Health &amp; Public Health</strong><span>Medical &amp; Healthcare</span></div>
+          </a>
+          <a href="courses.html?cat=engineering" class="course-drop-item">
+            <i class="fa-solid fa-gear course-drop-icon"></i>
+            <div class="course-drop-text"><strong>Engineering</strong><span>Robotics &amp; Technology</span></div>
+          </a>
+          <a href="courses.html?cat=supplychain" class="course-drop-item">
+            <i class="fa-solid fa-truck-ramp-box course-drop-icon"></i>
+            <div class="course-drop-text"><strong>Supply Chain &amp; Logistics</strong><span>Global Trade &amp; Operations</span></div>
+          </a>
+          <a href="courses.html?cat=law" class="course-drop-item">
+            <i class="fa-solid fa-scale-balanced course-drop-icon"></i>
+            <div class="course-drop-text"><strong>Law</strong><span>Corporate &amp; Int'l Law</span></div>
+          </a>
+          <a href="courses.html?cat=arts" class="course-drop-item">
+            <i class="fa-solid fa-palette course-drop-icon"></i>
+            <div class="course-drop-text"><strong>Arts, Media &amp; Design</strong><span>Media, Design &amp; Film</span></div>
+          </a>
+          <div class="course-drop-divider"></div>
+          <a href="courses.html" class="course-drop-viewall">View All Courses <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </div>
+      <div class="nav-dropdown">
+        <a href="services.html" class="nav-dropdown-toggle">Services <i class="fa-solid fa-chevron-down"></i></a>
+        <div class="nav-dropdown-menu service-drop-menu">
+          <a href="services.html#step-01" class="service-drop-item">
+            <i class="fa-solid fa-comments service-drop-icon"></i>
+            <div class="service-drop-text"><strong>Free Counselling</strong><span>Expert 1-on-1 guidance</span></div>
+          </a>
+          <a href="services.html#step-02" class="service-drop-item">
+            <i class="fa-solid fa-file-signature service-drop-icon"></i>
+            <div class="service-drop-text"><strong>Application Assistance</strong><span>End-to-end university filing</span></div>
+          </a>
+          <a href="services.html#step-03" class="service-drop-item">
+            <i class="fa-solid fa-hand-holding-dollar service-drop-icon"></i>
+            <div class="service-drop-text"><strong>Scholarship Guidance</strong><span>Financial aid &amp; grants</span></div>
+          </a>
+          <a href="services.html#step-04" class="service-drop-item">
+            <i class="fa-solid fa-piggy-bank service-drop-icon"></i>
+            <div class="service-drop-text"><strong>Education Loan Assistance</strong><span>Low interest student loans</span></div>
+          </a>
+          <a href="services.html#step-05" class="service-drop-item">
+            <i class="fa-solid fa-passport service-drop-icon"></i>
+            <div class="service-drop-text"><strong>Visa &amp; Documentation</strong><span>High success visa filing</span></div>
+          </a>
+          <a href="services.html#step-06" class="service-drop-item">
+            <i class="fa-solid fa-plane-departure service-drop-icon"></i>
+            <div class="service-drop-text"><strong>Pre-Departure Briefing</strong><span>Travel &amp; checklist guidance</span></div>
+          </a>
+          <a href="services.html#step-07" class="service-drop-item">
+            <i class="fa-solid fa-house-user service-drop-icon"></i>
+            <div class="service-drop-text"><strong>Post-Arrival Support</strong><span>Housing &amp; local setup</span></div>
+          </a>
+          <div class="service-drop-divider"></div>
+          <a href="services.html" class="service-drop-viewall">View All Services <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </div>
       <a href="Scholarship.html">Scholarships</a>
       <a href="Blog.html">Blog</a>
       <a href="contact.html">Contact Us</a>
@@ -542,29 +632,21 @@
   <!-- 3. Comprehensive Support at Every Step Section (EXACT MATCH REFERENCE DESIGN) -->
   <section class="about-support-section" id="support">
     <div class="container relative-z">
-      <!-- Section Header with Left 3D Books + Big Ben Sketch & Right Statue of Liberty Illustrations -->
+      <!-- Decorative Books Image - right side -->
+      <img src="assets/Books.png" alt="Books decoration" class="supp-books-corner">
+
+      <!-- Section Header -->
       <div class="about-support-header reveal">
-        <div class="supp-left-illus-wrap">
-          <img src="assets/big-ben-sketch.png" alt="Big Ben London Sketch Backdrop" class="supp-bigben-sketch">
-          <img src="assets/Books.png" alt="Graduation cap, books and globe 3D illustration" class="supp-books-img">
-        </div>
-        
         <div class="supp-head-center">
           <div class="about-pill-badge">
             <i class="fa-solid fa-briefcase"></i> WHAT WE DO
           </div>
-          <h2 class="supp-title">What We <span class="highlight-blue-underline">Do?</span></h2>
+          <div class="supp-title-row">
+            <img src="assets/Globe.png" alt="Globe" class="supp-globe-side supp-globe-left">
+            <h2 class="supp-title">Comprehensive Support at <span class="highlight-blue-underline">Every Step</span></h2>
+            <img src="assets/Globe.png" alt="Globe" class="supp-globe-side supp-globe-right">
+          </div>
           <p class="supp-subtext">We aim to provide students with professional guidance, individualized counseling, and comprehensive support to realize their study abroad ambitions. Whether it is determining the appropriate university or obtaining a student visa, we are here to ensure that everything in the procedure is straightforward and profitable.</p>
-        </div>
-
-        <div class="supp-plane-wrap">
-          <img src="assets/statue-of-liberty-sketch.png" alt="Statue of Liberty Sketch Backdrop" class="supp-statue-img">
-          <svg class="supp-plane-svg" viewBox="0 0 300 150" fill="none">
-            <path d="M 10 120 Q 150 10 280 100" stroke="#60A5FA" stroke-width="2" stroke-dasharray="5 5" opacity="0.4"/>
-            <g class="supp-plane-icon">
-              <path d="M21 16L18 10L14 11L16 16L10 17.5L8 15.5L6.5 16L8.5 19L6.5 22L8 22.5L10 20.5L16 22L14 27L18 28L21 22L26 20C27.5 19.4 28.5 18 28 17C27.5 16 26 15.6 24.5 16.2L21 16Z" fill="#2563EB"/>
-            </g>
-          </svg>
         </div>
       </div>
 
@@ -572,7 +654,7 @@
       <div class="supp-cards-grid reveal">
         <!-- Card 1 -->
         <div class="supp-card sc-blue">
-          <div class="sc-icon-circle sc-ic-blue"><i class="fa-solid fa-graduation-cap"></i></div>
+          <div class="sc-icon-circle sc-ic-blue"><img src="assets/Screenshot 2026-08-04 142543.png" alt="University Selection" class="sc-img-icon"></div>
           <div class="sc-body">
             <h3>1. University Selection</h3>
             <p>We help you choose the right university and program based on your goals, profile and budget.</p>
@@ -582,7 +664,7 @@
 
         <!-- Card 2 -->
         <div class="supp-card sc-green">
-          <div class="sc-icon-circle sc-ic-green"><i class="fa-solid fa-file-signature"></i></div>
+          <div class="sc-icon-circle sc-ic-green"><img src="assets/Screenshot 2026-08-04 142630.png" alt="Admission Assistance" class="sc-img-icon"></div>
           <div class="sc-body">
             <h3>2. Admission Assistance</h3>
             <p>From application to offer letter, we guide you through the entire admission process.</p>
@@ -592,7 +674,7 @@
 
         <!-- Card 3 -->
         <div class="supp-card sc-purple">
-          <div class="sc-icon-circle sc-ic-purple"><i class="fa-solid fa-passport"></i></div>
+          <div class="sc-icon-circle sc-ic-purple"><img src="assets/Screenshot 2026-08-05 222948.png" alt="Visa Guidance" class="sc-img-icon"></div>
           <div class="sc-body">
             <h3>3. Visa Guidance</h3>
             <p>Expert visa counselling and documentation support to ensure a smooth visa process.</p>
@@ -602,7 +684,7 @@
 
         <!-- Card 4 -->
         <div class="supp-card sc-orange">
-          <div class="sc-icon-circle sc-ic-orange"><i class="fa-solid fa-sack-dollar"></i></div>
+          <div class="sc-icon-circle sc-ic-orange"><img src="assets/Screenshot 2026-08-05 214015.png" alt="Scholarships Support" class="sc-img-icon"></div>
           <div class="sc-body">
             <h3>4. Scholarships Support</h3>
             <p>We identify and help you apply for scholarships and financial aid to reduce your costs.</p>
@@ -612,7 +694,7 @@
 
         <!-- Card 5 -->
         <div class="supp-card sc-pink">
-          <div class="sc-icon-circle sc-ic-pink"><i class="fa-solid fa-house"></i></div>
+          <div class="sc-icon-circle sc-ic-pink"><img src="assets/Screenshot 2026-08-04 151321.png" alt="Accommodation Assistance" class="sc-img-icon"></div>
           <div class="sc-body">
             <h3>5. Accommodation Assistance</h3>
             <p>We help you find safe, comfortable and affordable accommodation close to your university.</p>
@@ -622,7 +704,7 @@
 
         <!-- Card 6 -->
         <div class="supp-card sc-teal">
-          <div class="sc-icon-circle sc-ic-teal"><i class="fa-solid fa-briefcase"></i></div>
+          <div class="sc-icon-circle sc-ic-teal"><img src="assets/Screenshot 2026-08-04 162626.png" alt="Internship Support" class="sc-img-icon"></div>
           <div class="sc-body">
             <h3>6. Internship Support</h3>
             <p>We connect you with internship opportunities for practical learning and global exposure.</p>
@@ -632,7 +714,7 @@
 
         <!-- Card 7 -->
         <div class="supp-card sc-amber">
-          <div class="sc-icon-circle sc-ic-amber"><i class="fa-solid fa-plane-departure"></i></div>
+          <div class="sc-icon-circle sc-ic-amber"><img src="assets/Screenshot 2026-08-05 222953.png" alt="Pre-Departure Guidance" class="sc-img-icon"></div>
           <div class="sc-body">
             <h3>7. Pre-Departure Guidance</h3>
             <p>We prepare you for your journey with pre-departure briefing, checklists and travel support.</p>
@@ -642,7 +724,7 @@
 
         <!-- Card 8 -->
         <div class="supp-card sc-royalblue">
-          <div class="sc-icon-circle sc-ic-royalblue"><i class="fa-solid fa-user-group"></i></div>
+          <div class="sc-icon-circle sc-ic-royalblue"><img src="assets/Screenshot 2026-08-04 162630.png" alt="Post-Arrival Support" class="sc-img-icon"></div>
           <div class="sc-body">
             <h3>8. Post-Arrival Support</h3>
             <p>We assist you after arrival with settling in, documentation and adapting to a new environment.</p>
@@ -652,7 +734,7 @@
 
         <!-- Card 9 -->
         <div class="supp-card sc-lime">
-          <div class="sc-icon-circle sc-ic-lime"><i class="fa-solid fa-user-graduate"></i></div>
+          <div class="sc-icon-circle sc-ic-lime"><img src="assets/Screenshot 2026-08-04 142534.png" alt="IELTS Preparation" class="sc-img-icon"></div>
           <div class="sc-body">
             <h3>9. IELTS Preparation</h3>
             <p>Top-rated IELTS training to help you achieve the score you need for your dream university.</p>
@@ -662,7 +744,7 @@
 
         <!-- Card 10 -->
         <div class="supp-card sc-indigo">
-          <div class="sc-icon-circle sc-ic-indigo"><i class="fa-solid fa-file-lines"></i></div>
+          <div class="sc-icon-circle sc-ic-indigo"><img src="assets/Screenshot 2026-08-04 142630.png" alt="Documentation Support" class="sc-img-icon"></div>
           <div class="sc-body">
             <h3>10. Documentation Support</h3>
             <p>We assist with all required documents to ensure accuracy, completeness and on-time submission.</p>
@@ -672,7 +754,7 @@
 
         <!-- Card 11 -->
         <div class="supp-card sc-red">
-          <div class="sc-icon-circle sc-ic-red"><i class="fa-solid fa-laptop-file"></i></div>
+          <div class="sc-icon-circle sc-ic-red"><img src="assets/Screenshot 2026-08-04 162646.png" alt="Post Study Career Support" class="sc-img-icon"></div>
           <div class="sc-body">
             <h3>11. Post Study Career Support</h3>
             <p>Career counselling, CV review, interview preparation and job search guidance after graduation.</p>
@@ -682,7 +764,7 @@
 
         <!-- Card 12 -->
         <div class="supp-card sc-lightblue">
-          <div class="sc-icon-circle sc-ic-lightblue"><i class="fa-solid fa-headset"></i></div>
+          <div class="sc-icon-circle sc-ic-lightblue"><img src="assets/ChatGPT Image Aug 5, 2026, 09_44_27 PM.png" alt="End-to-End Support" class="sc-img-icon"></div>
           <div class="sc-body">
             <h3>12. End-to-End Support</h3>
             <p>From your first counselling session to landing and beyond &ndash; we are with you at every step.</p>
@@ -694,7 +776,7 @@
       <!-- Bottom White Trust Features Bar -->
       <div class="supp-trust-bar reveal">
         <div class="st-item">
-          <div class="st-icon"><i class="fa-solid fa-user-check"></i></div>
+          <div class="st-icon"><img src="assets/Screenshot 2026-08-04 151326.png" alt="Personalized Guidance" class="st-img-icon"></div>
           <div>
             <strong>Personalized Guidance</strong>
             <span>Tailored to your goals and profile</span>
@@ -704,7 +786,7 @@
         <div class="st-divider"></div>
 
         <div class="st-item">
-          <div class="st-icon"><i class="fa-solid fa-shield-check"></i></div>
+          <div class="st-icon"><img src="assets/Screenshot 2026-08-04 142635.png" alt="100% Transparency" class="st-img-icon"></div>
           <div>
             <strong>100% Transparency</strong>
             <span>Clear process, no hidden costs</span>
@@ -714,7 +796,7 @@
         <div class="st-divider"></div>
 
         <div class="st-item">
-          <div class="st-icon"><i class="fa-solid fa-handshake"></i></div>
+          <div class="st-icon"><img src="assets/Screenshot 2026-08-04 142611.png" alt="Dedicated Support" class="st-img-icon"></div>
           <div>
             <strong>Dedicated Support</strong>
             <span>Experts with you, always</span>
@@ -724,7 +806,7 @@
         <div class="st-divider"></div>
 
         <div class="st-item">
-          <div class="st-icon"><i class="fa-solid fa-globe"></i></div>
+          <div class="st-icon"><img src="assets/Screenshot 2026-08-04 142552.png" alt="Global Opportunities" class="st-img-icon"></div>
           <div>
             <strong>Global Opportunities</strong>
             <span>Opening doors to your future</span>
@@ -735,31 +817,19 @@
   <!-- 4. Our Story Section (EXACT MATCH REFERENCE DESIGN) -->
   <section class="about-story-section" id="story">
     <div class="container relative-z">
-      <!-- Section Header with Backdrop Artwork (Big Ben, Statue of Liberty, Globe, Cap, Plane) -->
+      <!-- Section Header -->
       <div class="about-story-header reveal">
-        
-        <!-- Left Side Artwork: Big Ben, 3D Globe & Flying Plane -->
-        <div class="story-left-artwork">
-          <img src="assets/big-ben-sketch.png" alt="Big Ben London Sketch" class="story-bigben-sketch">
-          <img src="assets/Globe.png" alt="3D Earth Globe" class="story-globe-img">
-          <img src="assets/plane.png" alt="Flying Aeroplane" class="story-plane-img">
-        </div>
+        <!-- Leftmost Globe -->
+        <img src="assets/Globe.png" alt="Globe" class="story-globe-corner">
 
         <div class="story-head-center">
           <div class="about-pill-badge">
             <i class="fa-solid fa-book-open"></i> OUR STORY
           </div>
-          <h2 class="story-title">Our <span class="text-blue-accent">Story</span></h2>
+          <h2 class="story-title">A Journey of Trust , Growth <span class="text-blue-accent">Global Impact</span></h2>
           <div class="story-title-underline"></div>
           <p class="story-subtext">ISMS Global Education has helped over 2,000+ students achieve their dreams since 2009 with a 100% Visa Success Rate. We make the journey simple, transparent, and successful. We connect students with top universities around the world, from university selection and admissions to visa assistance and pre-departure services.</p>
         </div>
-
-        <!-- Right Side Artwork: Statue of Liberty & 3D Graduation Cap -->
-        <div class="story-right-artwork">
-          <img src="assets/statue-of-liberty-sketch.png" alt="Statue of Liberty Sketch" class="story-statue-sketch">
-          <img src="assets/cap.png" alt="3D Graduation Cap" class="story-cap-img">
-        </div>
-
       </div>
 
       <!-- Main 2-Column Split: Left Hero Illustration & Right Vertical Milestone Timeline -->
@@ -820,7 +890,7 @@
           <!-- Row 5: 2021 -->
           <div class="story-t-item">
             <span class="st-year">2021</span>
-            <div class="st-node st-node-cyan"><i class="fa-solid fa-shield-check"></i></div>
+            <div class="st-node st-node-cyan"><i class="fa-solid fa-shield-halved"></i></div>
             <div class="st-arrow"><i class="fa-solid fa-chevron-right"></i></div>
             <div class="st-card">
               <h3>2,000+ Students Achieved Dreams</h3>
@@ -844,7 +914,7 @@
       <!-- Bottom White Stat Bar -->
       <div class="story-stat-bar reveal">
         <div class="s-stat-item">
-          <div class="s-stat-icon icon-b-blue"><i class="fa-solid fa-users"></i></div>
+          <div class="s-stat-icon icon-b-blue"><img src="assets/People.png" alt="Students Guided" class="s-stat-img"></div>
           <div>
             <strong>2000+</strong>
             <span>Students Guided</span>
@@ -854,7 +924,7 @@
         <div class="s-stat-divider"></div>
 
         <div class="s-stat-item">
-          <div class="s-stat-icon icon-b-green"><i class="fa-solid fa-graduation-cap"></i></div>
+          <div class="s-stat-icon icon-b-green"><img src="assets/Graduate_cap.png" alt="Global Universities" class="s-stat-img"></div>
           <div>
             <strong>500+</strong>
             <span>Global Universities</span>
@@ -864,7 +934,7 @@
         <div class="s-stat-divider"></div>
 
         <div class="s-stat-item">
-          <div class="s-stat-icon icon-b-orange"><i class="fa-solid fa-earth-americas"></i></div>
+          <div class="s-stat-icon icon-b-orange"><img src="assets/Globe.png" alt="Study Destinations" class="s-stat-img"></div>
           <div>
             <strong>10+</strong>
             <span>Study Destinations</span>
@@ -874,7 +944,7 @@
         <div class="s-stat-divider"></div>
 
         <div class="s-stat-item">
-          <div class="s-stat-icon icon-b-purple"><i class="fa-solid fa-shield-check"></i></div>
+          <div class="s-stat-icon icon-b-purple"><img src="assets/Shield.png" alt="Visa Success Rate" class="s-stat-img"></div>
           <div>
             <strong>100%</strong>
             <span>Visa Success Rate</span>
@@ -1422,7 +1492,7 @@
 
         <!-- Card 3 -->
         <div class="why-card-box">
-          <div class="wc-icon-circle"><i class="fa-solid fa-shield-check"></i></div>
+          <div class="wc-icon-circle"><i class="fa-solid fa-shield-halved"></i></div>
           <h4>100% Visa Success Rate</h4>
           <div class="wc-line"></div>
           <p>Proven 100% visa success track record with meticulous documentation.</p>
@@ -1548,7 +1618,7 @@
         <div class="wn-divider"></div>
 
         <div class="wn-stat-item">
-          <div class="wn-icon"><i class="fa-solid fa-shield-check"></i></div>
+          <div class="wn-icon"><i class="fa-solid fa-shield-halved"></i></div>
           <div>
             <strong>100%</strong>
             <div class="wn-label">Commitment</div>
@@ -2404,7 +2474,63 @@
       </div>
 
       <div class="footer-col"><h5>Quick Links</h5>
-        <ul><li><a href="about.html">About Us</a></li><li><a href="services.html">Our Services</a></li><li><a href="study-abroad-counselling.html">Study Abroad Counselling</a></li><li><a href="index.html#destinations">Study Destinations</a></li><li><a href="universities.html">Universities</a></li><li><a href="courses.html">Courses</a></li><li><a href="Scholarship.html">Scholarships</a></li><li><a href="index.html#blog">Blogs &amp; Resources</a></li><li><a href="contact.html">Contact Us</a></li><li><a href="sitemap.html">Sitemap</a></li></ul>
+        <ul><li><a href="about.html">About Us</a></li><li><a href="services.html">Our Services</a></li><li><a href="study-abroad-counselling.html">Study Abroad Counselling</a></li><li><a href="index.html#destinations">Study Destinations</a></li><li><div class="nav-dropdown">
+        <a href="universities.html" class="nav-dropdown-toggle">Universities <i class="fa-solid fa-chevron-down"></i></a>
+        <div class="nav-dropdown-menu uni-drop-menu">
+          <a href="universities.html" class="uni-drop-item">
+            <i class="fa-solid fa-globe uni-drop-icon"></i>
+            <div class="uni-drop-text"><strong>Browse by Country</strong><span>Find universities by destination</span></div>
+          </a>
+          <a href="universities.html?filter=ranking" class="uni-drop-item">
+            <i class="fa-solid fa-ranking-star uni-drop-icon"></i>
+            <div class="uni-drop-text"><strong>Browse by Ranking</strong><span>Top QS &amp; World ranked universities</span></div>
+          </a>
+          <a href="universities.html?filter=course" class="uni-drop-item">
+            <i class="fa-solid fa-book-open uni-drop-icon"></i>
+            <div class="uni-drop-text"><strong>Browse by Course</strong><span>Find universities by your subject</span></div>
+          </a>
+          <a href="universities.html?filter=top25" class="uni-drop-item">
+            <i class="fa-solid fa-award uni-drop-icon"></i>
+            <div class="uni-drop-text"><strong>Top 25 Universities</strong><span>World's best institutions</span></div>
+          </a>
+          <div class="uni-drop-divider"></div>
+          <a href="universities.html" class="uni-drop-viewall">View All Universities <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </div></li><li><div class="nav-dropdown">
+        <a href="courses.html" class="nav-dropdown-toggle">Courses <i class="fa-solid fa-chevron-down"></i></a>
+        <div class="nav-dropdown-menu course-drop-menu">
+          <a href="courses.html?cat=business" class="course-drop-item">
+            <i class="fa-solid fa-briefcase course-drop-icon"></i>
+            <div class="course-drop-text"><strong>Business &amp; Management</strong><span>(MBA, MSc Finance)</span></div>
+          </a>
+          <a href="courses.html?cat=cs" class="course-drop-item">
+            <i class="fa-solid fa-laptop-code course-drop-icon"></i>
+            <div class="course-drop-text"><strong>Computer Science &amp; Data</strong><span>(AI, Data Science)</span></div>
+          </a>
+          <a href="courses.html?cat=health" class="course-drop-item">
+            <i class="fa-solid fa-notes-medical course-drop-icon"></i>
+            <div class="course-drop-text"><strong>Health &amp; Public Health</strong><span>Medical &amp; Healthcare</span></div>
+          </a>
+          <a href="courses.html?cat=engineering" class="course-drop-item">
+            <i class="fa-solid fa-gear course-drop-icon"></i>
+            <div class="course-drop-text"><strong>Engineering</strong><span>Robotics &amp; Technology</span></div>
+          </a>
+          <a href="courses.html?cat=supplychain" class="course-drop-item">
+            <i class="fa-solid fa-truck-ramp-box course-drop-icon"></i>
+            <div class="course-drop-text"><strong>Supply Chain &amp; Logistics</strong><span>Global Trade &amp; Operations</span></div>
+          </a>
+          <a href="courses.html?cat=law" class="course-drop-item">
+            <i class="fa-solid fa-scale-balanced course-drop-icon"></i>
+            <div class="course-drop-text"><strong>Law</strong><span>Corporate &amp; Int'l Law</span></div>
+          </a>
+          <a href="courses.html?cat=arts" class="course-drop-item">
+            <i class="fa-solid fa-palette course-drop-icon"></i>
+            <div class="course-drop-text"><strong>Arts, Media &amp; Design</strong><span>Media, Design &amp; Film</span></div>
+          </a>
+          <div class="course-drop-divider"></div>
+          <a href="courses.html" class="course-drop-viewall">View All Courses <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </div></li><li><a href="Scholarship.html">Scholarships</a></li><li><a href="index.html#blog">Blogs &amp; Resources</a></li><li><a href="contact.html">Contact Us</a></li><li><a href="sitemap.html">Sitemap</a></li></ul>
       </div>
 
       <div class="footer-col"><h5>Study Destinations</h5>
@@ -2460,7 +2586,7 @@
           <div class="accred-badge"><i class="fa-solid fa-circle-nodes"></i>ICEF<small>Connect. Recruit. Grow.</small></div>
           <div class="accred-badge"><i class="fa-regular fa-circle"></i>British Council<small>Certified Agent</small></div>
           <div class="accred-badge"><i class="fa-solid fa-award"></i>QEAC Australia<small>Qualified Education Agent Counsellor</small></div>
-          <div class="accred-badge"><i class="fa-solid fa-a"></i>AAERI<small>Member</small></div>
+          <div class="accred-badge"><i class="fa-solid fa-award"></i>AAERI<small>Member</small></div>
           <div class="accred-badge"><i class="fa-solid fa-compass"></i>PIER<small>Professional Int'l Education Resources</small></div>
           <div class="accred-badge"><i class="fa-solid fa-globe"></i>WEBA<small>Education &amp; Branding Alliance</small></div>
         </div>
